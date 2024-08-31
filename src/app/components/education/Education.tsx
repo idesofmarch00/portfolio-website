@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "../ui/timeline";
 
-export default function Experiences() {
+export default function Education() {
   const data = [
     {
       title: "2024",
