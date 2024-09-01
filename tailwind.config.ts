@@ -29,12 +29,19 @@ const config: Config = {
         'glass-sm': '5px 5px 20px 0px rgba(254,254,91, 0.3)',
       },
       keyframes:{
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       'spin-reverse':{
         '0%': {transform: 'rotate(0deg)'},
         '100%': {transform: 'rotate(-360deg)'}
       }
       },
       animation:{
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         'spin-slow': 'spin 40s linear infinite',
         'spin-slow-reverse': 'spin-reverse 40s linear infinite',
       },

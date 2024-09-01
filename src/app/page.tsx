@@ -11,6 +11,7 @@ import Button from "./components/button"
 import ProjectsCarousel from "./components/projects-carousel";
 import Blogs from "./components/blogs";
 import Socials from "./components/socials";
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <DP/>
       <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/><Socials/></div>
       </div>
-
+      <Skills/>
       <Navigation />
       <Spotlight/>
       <ProjectsCarousel/>
