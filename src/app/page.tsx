@@ -14,8 +14,8 @@ import Socials from "./components/socials";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="flex items-start justify-between px-10 space-x-4 pt-20"><DP/> <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/> <Socials/></div></div>
+    <main className="flex min-h-screen flex-col items-center justify-between bg-black">
+      <div className="flex items-start justify-between px-10 space-x-4 pt-20 bg-black"><DP/> <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/> <Socials/></div></div>
       <Navigation />
       <Spotlight/>
       <ProjectsCarousel/>
