@@ -11,7 +11,7 @@ export const TextRevealCard = ({
   className,
 }: {
   text: string;
-  revealText: string;
+  revealText?: string;
   children?: React.ReactNode;
   className?: string;
 }) => {
@@ -73,8 +73,8 @@ export const TextRevealCard = ({
     >
       {children}
 
-      <div className=" relative flex items-center overflow-hidden">
-        <motion.div
+      <div className="relative flex items-center overflow-hidden">
+      {revealText && (  <motion.div
           style={{
             width: "100%",
           }}
@@ -99,7 +99,7 @@ export const TextRevealCard = ({
           >
             {revealText}
           </p>
-        </motion.div>
+        </motion.div>)}
         <motion.div
           animate={{
             left: `${widthPercentage}%`,

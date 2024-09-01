@@ -22,13 +22,17 @@ export default function Home() {
       <DP/>
       <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/><Socials/></div>
       </div>
+      <br />
+      <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
       <Navigation />
+      <br />
       <Spotlight/>
       <ProjectsCarousel/>
       <Projects/>
       <Experience/>
       <Education/>
+      <br />
       <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
       <Blogs/>
     </main>
