@@ -88,15 +88,26 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-32 h-16 flex items-center justify-center max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.id}
-          >
-            <Image src={item.url} alt={item.name} width={50} height={50} />
-          </li>
+          className="w-32 h-16 flex items-center justify-center max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 group"
+          style={{
+            background:
+              "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+          }}
+          key={item.id}
+        >
+          <Image 
+            src={item.url} 
+            alt={item.name} 
+            width={50} 
+            height={50} 
+            className="transition-opacity duration-300 group-hover:opacity-0"
+          />
+          <p className="text-xs text-slate-300 absolute transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+            {item.name}
+          </p>
+        </li>
+        
+        
         ))}
       </ul>
     </div>
