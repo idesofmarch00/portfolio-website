@@ -13,6 +13,7 @@ import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
 import TextReveal from "./components/text-reveal";
+import Experience from "./components/experience";
 
 export default function Home() {
   return (
@@ -27,8 +28,9 @@ export default function Home() {
       <ProjectsCarousel/>
       <Projects/>
       <TextReveal/>
-      <Blogs/>
+      <Experience/>
       <Education/>
+      <Blogs/>
     </main>
   );
 }
