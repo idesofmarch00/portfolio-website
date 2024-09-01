@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 export const BtnList = [
   { name: "Git", iconUrl: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { name: "Docker", iconUrl: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" },
-  { name: "Google Cloud Platform", iconUrl: "https://cloud.google.com/images/products/logos/svg/gcp-logo.svg" },
+  { name: "Google Cloud Platform", iconUrl: "https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-cloud-icon-vector-PNG.png" },
   { name: "MongoDB", iconUrl: "https://www.mongodb.com/assets/images/global/favicon.ico" },
-  { name: "PWA (Progressive Web Apps)", iconUrl: "https://developers.google.com/web/fundamentals/web-app-manifest/logo192.png" },
-  { name: "WebSockets", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Websocket.png/800px-Websocket.png" },
-  { name: "LLMs (Large Language Models)", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/AI_Language_Models.png/640px-AI_Language_Models.png" },
+  { name: "PWA", iconUrl: "https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png" },
+  { name: "WebSockets", iconUrl: "https://socket.io/images/logo-dark.svg" },
+  { name: "LLMs", iconUrl: "https://seeklogo.com/images/M/microsoft-365-copilot-logo-44BA459F18-seeklogo.com.png" },
   { name: "VS Code", iconUrl: "https://code.visualstudio.com/favicon.ico" },
-  { name: "Figma", iconUrl: "https://www.figma.com/favicon.ico" }
+  { name: "Figma", iconUrl: "https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&q=75&fit=max&auto=format&dpr=2" }
 ];
 
 
