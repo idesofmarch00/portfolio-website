@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "../../lib/utils";
+import { AnimatedModal } from "../modal";
 
 export const Card = React.memo(
   ({
@@ -55,15 +56,16 @@ export function FocusCards({ cards }: { cards: Card[] }) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
-      {cards.map((card, index) => (
-        <Card
+        {cards.map((card, index) => (
+        <AnimatedModal data={card}><Card
           key={card.title}
           card={card}
           index={index}
           hovered={hovered}
           setHovered={setHovered}
-        />
+        /></AnimatedModal>
       ))}
+      
     </div>
   );
 }
