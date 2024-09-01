@@ -18,9 +18,9 @@ import Experience from "./components/experience";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-black px-32">
-      <div className="flex justify-between px-10 space-x-4 pt-20 bg-black">
-      <DP/>
-      <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/><Socials/></div>
+      <div className="flex justify-between items-start px-10 space-x-4 pt-20 bg-black">
+      <div className="flex flex-col w-1/2"><DP/><Socials/></div>
+      <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><Button/></div>
       </div>
       <br />
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>

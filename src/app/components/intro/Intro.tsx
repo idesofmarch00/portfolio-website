@@ -18,26 +18,31 @@ export default function Intro() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="h-36 pt-2 text-xl font-bold text-neutral-700 dark:text-white max-w-xl leading-relaxed lg:leading-snug mx-auto"
-      > with
+        className="h-72 pt-2 font-bold text-neutral-700 dark:text-white max-w-xl leading-relaxed  mx-auto text-xl"
+      > 
+{/* with over 
         <Highlight className="text-black dark:text-white">
-          2
-        </Highlight>years of experience 
-        writing dasdasdasdasdasdasd highly
+        2 years of experience
+        </Highlight>and a knack for building <Highlight className="text-black dark:text-white">scalable, 
+        high-performance solutions</Highlight> that make a real difference.
+         My journey in software development has been fueled by an insatiable curiosity 
+         to craft  <Highlight className="text-black dark:text-white">
+         user-centric web and mobile applications
+        </Highlight>. 
+         I take pride in writing <Highlight className="text-black dark:text-white">clean, high-quality code</Highlight> that solves real-world problems.
+         <br />
+         And on those rare days when my eyes and fingers need a break from the screens and keyboard , you&apos;`ll find me immersed in <Highlight className="text-black dark:text-white">literature, 
+         kicking a football around, or indulging in good food.</Highlight> */}
+
+with over 
         <Highlight className="text-black dark:text-white">
-          scalable
-        </Highlight>
-        and
-        <Highlight className="text-black dark:text-white">
-          maintainable clean code
-        </Highlight>
-         Lorem sad ipsum dolor sit amet consectetur adipisicing elit.Love to sd
-        <Highlight className="text-black dark:text-white" >
-          read sad
-        </Highlight>Lorem ipsum dolor sit and play
-        <Highlight className="text-black dark:text-white">
-          football
-        </Highlight>
+        2 years of experience
+        </Highlight>and a knack for building<Highlight className="text-black dark:text-white">scalable, 
+        high-performance user-centric web and mobile applications</Highlight>.
+         I take pride in writing <Highlight className="text-black dark:text-white">clean, high-quality code</Highlight> that solves real-world problems.
+         <br />
+         On days when my eyes and fingers need a break from the screens and keyboard , you&apos;ll find me immersed in <Highlight className="text-black dark:text-white">literature, 
+         kicking a football around, or indulging in good food.</Highlight>
       </motion.h1>
     </HeroHighlight>
   );

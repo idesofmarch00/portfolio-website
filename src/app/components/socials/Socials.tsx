@@ -72,7 +72,7 @@ const people = [
 
 export default function Socials() {
   return (
-    <div className="flex flex-row items-center justify-center pt-20 w-full">
+    <div className="flex flex-row items-center justify-center pt-6 w-full">
       <AnimatedTooltip items={people} />
     </div>
   );
