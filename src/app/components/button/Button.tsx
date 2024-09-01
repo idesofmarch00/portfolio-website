@@ -1,17 +1,37 @@
 "use client";
 import React from "react";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import Magnetic from "../ui/magnetic";
 
 export default function Button() {
   return (
-    <div className="m-40 pt-6 flex justify-center text-center">
-      <HoverBorderGradient
-        containerClassName="rounded-full"
-        as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+    <div className="flex flex-col justify-center items-center"><Magnetic>
+    <div className=" border-2 text-white border-white rounded-3xl w-[10.5rem] h-12 flex items-center justify-center">
+      <motion.div
+        initial="initial"
+        whileHover="hovered"
+        className="h-fit relative overflow-hidden cursor-pointer"
       >
-        Download Resume
-      </HoverBorderGradient>
+        <motion.div
+          variants={{
+            initial: { y: 0 },
+            hovered: { y: -30 },
+          }}
+        >
+          Download resume
+        </motion.div>
+        <motion.div
+          className="absolute inset-0"
+          variants={{
+            initial: { y: 30, opacity: 0 },
+            hovered: { y: 0, opacity: 1 },
+          }}
+        >
+          Download resume
+        </motion.div>
+      </motion.div>
     </div>
+  </Magnetic></div>
+    
   );
 }
