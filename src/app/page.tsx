@@ -25,7 +25,7 @@ export default function Home() {
       <br />
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
-      <Navigation />
+      <div className="flex items-center justify-between"><Navigation /></div>
       <br />
       <Spotlight/>
       <ProjectsCarousel/>

@@ -29,20 +29,6 @@ const t2 = [{ "id": 11, "name": "Vitest", "url": "https://vitest.dev/logo.svg" }
   { "id": 22, "name": "GraphQL", "url": "https://graphql.org/img/logo.svg" },
   { "id": 23, "name": "urql", "url": "https://raw.githubusercontent.com/urql-graphql/urql/main/packages/site/src/assets/sidebar-badge.svg" }]
 
-const fl = [
-  { "id": 1, "name": "Git", "url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
-  { "id": 2, "name": "Docker", "url": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" },
-  { "id": 3, "name": "Google Cloud Platform", "url": "https://cloud.google.com/images/products/logos/svg/gcp-logo.svg" },
-  { "id": 4, "name": "MongoDB", "url": "https://www.mongodb.com/assets/images/global/favicon.ico" },
-  { "id": 5, "name": "PWA (Progressive Web Apps)", "url": "https://developers.google.com/web/fundamentals/web-app-manifest/logo192.png" },
-  { "id": 6, "name": "WebSockets", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Websocket.png/800px-Websocket.png" },
-  { "id": 7, "name": "LLMs (Large Language Models)", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/AI_Language_Models.png/640px-AI_Language_Models.png" },
-  { "id": 8, "name": "VS Code", "url": "https://code.visualstudio.com/favicon.ico" },
-  { "id": 9, "name": "Figma", "url": "https://www.figma.com/favicon.ico" }
-]
-
-
-
 export default function Skills() {
   return (
     <div className="pt-10 rounded-md flex flex-col space-y-2 antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
