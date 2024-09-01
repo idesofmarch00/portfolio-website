@@ -5,8 +5,8 @@ import Magnetic from "../ui/magnetic";
 
 export default function Button() {
   return (
-    <div className="flex flex-col justify-center items-center"><Magnetic>
-    <div className=" border-2 text-white border-white rounded-3xl w-[10.5rem] h-12 flex items-center justify-center">
+    <div className="flex flex-col justify-center items-center pt-4"><Magnetic>
+    <div className="border-2 text-white border-white rounded-3xl w-[10.5rem] h-12 flex items-center justify-center">
       <motion.div
         initial="initial"
         whileHover="hovered"

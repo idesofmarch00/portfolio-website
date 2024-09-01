@@ -2,6 +2,7 @@
 
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from "next/image"
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,6 +12,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
+    id: number;
     name: string;
     url: string;
   }[];
@@ -86,14 +88,14 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-32 h-16 max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8"
+            className="w-32 h-16 flex items-center justify-center max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
-            key={item.name}
+            key={item.id}
           >
-            
+            <Image src={item.url} alt={item.name} width={50} height={50} />
           </li>
         ))}
       </ul>
