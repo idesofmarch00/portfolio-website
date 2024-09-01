@@ -1,15 +1,28 @@
-import React from "react";
-import FlipWords from "../ui/flip-words";
+"use client";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
-export default function Name() {
-  const words = ["FrontEnd Engineer","Web Developer","Software Engineer"];
-
+export default function TypewriterEffectSmoothDemo() {
+  const words = [
+    {
+      text: "My",
+    },
+    {
+      text: "name",
+    },
+    {
+      text: "is",
+    },
+    {
+      text: "Sahil",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "Ahmed",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
   return (
-    <div className="h-14 flex justify-center items-center px-4">
-      <div className="text-lg mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-        My Name is Sahil Ahmed , I am a
-        <FlipWords words={words} /> <br />
-      </div>
-    </div>
+   
+      <TypewriterEffectSmooth words={words} />
   );
 }

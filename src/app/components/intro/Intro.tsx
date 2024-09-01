@@ -19,17 +19,24 @@ export default function Intro() {
           ease: [0.4, 0.0, 0.2, 1],
         }}
         className="p-4 h-24 font-bold text-neutral-700 dark:text-white max-w-xl leading-relaxed lg:leading-snug text-center mx-auto"
-      >
-        Lorem ipsum dolor sit amet.{" "}
+      > with
         <Highlight className="text-black dark:text-white">
-          highlight 1
+          2
+        </Highlight>years of experience 
+        writing highly
+        <Highlight className="text-black dark:text-white">
+          scalable
         </Highlight>
-         enim deserunt nisi voluptatibus vel explicabo nobis odit placeat!
-        <Highlight className="text-black dark:text-white" >
-          highlight 2
-        </Highlight> Lorem, ipsum.
+        and
         <Highlight className="text-black dark:text-white">
-          highlight 3
+          maintainable clean code
+        </Highlight>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Love to
+        <Highlight className="text-black dark:text-white" >
+          read
+        </Highlight>Lorem ipsum dolor sit and play
+        <Highlight className="text-black dark:text-white">
+          football
         </Highlight>
       </motion.h1>
     </HeroHighlight>
