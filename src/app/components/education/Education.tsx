@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "../ui/timeline";
+import TextReveal from "../text-reveal"
 
 export default function Education() {
   const data = [
@@ -149,7 +150,9 @@ export default function Education() {
   ];
   return (
     <div className="w-full">
-      <Timeline data={data} />
+      <Timeline data={data} >
+      <TextReveal visible="My Work Experience" revealed="My Education"/>
+      </Timeline>
     </div>
   );
 }

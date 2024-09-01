@@ -27,9 +27,9 @@ export default function Home() {
       <Spotlight/>
       <ProjectsCarousel/>
       <Projects/>
-      <TextReveal/>
       <Experience/>
       <Education/>
+      <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
       <Blogs/>
     </main>
   );
