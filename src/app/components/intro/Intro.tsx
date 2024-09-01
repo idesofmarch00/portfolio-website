@@ -18,12 +18,12 @@ export default function Intro() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="p-4 h-24 font-bold text-neutral-700 dark:text-white max-w-xl leading-relaxed lg:leading-snug text-center mx-auto"
+        className="h-36 pt-2 text-xl font-bold text-neutral-700 dark:text-white max-w-xl leading-relaxed lg:leading-snug mx-auto"
       > with
         <Highlight className="text-black dark:text-white">
           2
         </Highlight>years of experience 
-        writing highly
+        writing dasdasdasdasdasdasd highly
         <Highlight className="text-black dark:text-white">
           scalable
         </Highlight>
@@ -31,9 +31,9 @@ export default function Intro() {
         <Highlight className="text-black dark:text-white">
           maintainable clean code
         </Highlight>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Love to
+         Lorem sad ipsum dolor sit amet consectetur adipisicing elit.Love to sd
         <Highlight className="text-black dark:text-white" >
-          read
+          read sad
         </Highlight>Lorem ipsum dolor sit and play
         <Highlight className="text-black dark:text-white">
           football

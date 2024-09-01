@@ -22,7 +22,6 @@ export default function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-   
       <TypewriterEffectSmooth words={words} />
   );
 }
