@@ -13,8 +13,8 @@
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.0.0",
     "@radix-ui/react-hover-card": "^1.1.1",
-    "@react-three/drei": "^9.92.7",
-    "@react-three/fiber": "^8.15.12",
+    "@react-three/drei": "^9.111.5",
+    "@react-three/fiber": "^8.17.6",
     "@tabler/icons-react": "^3.14.0",
     "@types/three": "^0.163.0",
     "class-variance-authority": "^0.7.0",
@@ -32,8 +32,8 @@
     "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.160.0",
-    "three-globe": "^2.31.0",
+    "three": "^0.160.1",
+    "three-globe": "^2.31.1",
     "three-stdlib": "^2.28.9",
     "tunnel-rat": "^0.1.2",
     "vercel": "^34.0.0"

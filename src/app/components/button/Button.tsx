@@ -3,7 +3,7 @@ import React from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import Magnetic from "../ui/magnetic";
 
-export default function Button() {
+export default function Button({text}:{text:string}) {
   return (
     <div className="flex flex-col justify-center items-center pt-4"><Magnetic>
     <div className="border-2 text-white border-white rounded-3xl w-[10.5rem] h-12 flex items-center justify-center">
@@ -18,7 +18,7 @@ export default function Button() {
             hovered: { y: -30 },
           }}
         >
-          Download resume
+          {text}
         </motion.div>
         <motion.div
           className="absolute inset-0"
@@ -27,7 +27,7 @@ export default function Button() {
             hovered: { y: 0, opacity: 1 },
           }}
         >
-          Download resume
+                    {text}
         </motion.div>
       </motion.div>
     </div>
