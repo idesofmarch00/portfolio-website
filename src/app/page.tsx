@@ -12,6 +12,7 @@ import ProjectsCarousel from "./components/projects-carousel";
 import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
+import TextReveal from "./components/text-reveal";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Spotlight/>
       <ProjectsCarousel/>
       <Projects/>
+      <TextReveal/>
       <Blogs/>
       <Education/>
     </main>
