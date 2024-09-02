@@ -27,7 +27,8 @@ export default function Home() {
       {/* HERO SECTION */}
       <div className="flex justify-between items-start px-10 space-x-4 pt-4 bg-black">
       <div className="flex flex-col w-1/2"><DP/><Socials/></div>
-      <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><div className="flex items-center justify-center space-x-6"><Button text="Download Resume"/><Button text="Contact Me"/></div></div>
+      <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><div className="flex items-center justify-center space-x-6"><Button text="Experience" href="#experience" />
+      <Button text="Projects" href="#projects" /></div></div>
       </div>
 
       <br />
@@ -43,7 +44,7 @@ export default function Home() {
       </div>
       </div>
 
-      <br />
+      <br id="projects" />
 
       {/* PROJECTS SECTION */}
       <Spotlight/>
@@ -52,7 +53,7 @@ export default function Home() {
 
       <br />
       <br />
-      <br />
+      <br id="experience" />
 
       {/* EXPERIENCE EDUCATION SECTION */}
       {/* <Experience/> */}
