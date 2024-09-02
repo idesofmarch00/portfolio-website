@@ -39,7 +39,7 @@ export default function Projects() {
       code: "https://github.com/idesofmarch00/snip-chat",
       link: "https://snip-chat.netlify.app",
       src: "/images/snip-chat.png",
-        "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>Sending snaps, images, and location information</li><li>Real-time notifications and service workers for enhanced engagement and offline functionality</li><li>A unique feature to discover and add random users nearby, fostering new connections</li></ul></ul>"
+        "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>"
     },
     {
       title: "SwissArmyKnife NewTab",
@@ -47,7 +47,7 @@ export default function Projects() {
       code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
       active : true,
       src: "/images/chrome-extension.png",
-        "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>Real-time Bitcoin price and weather updates</li><li>Site blocker, Pomodoro timer, and To-Do list to enhance focus</li><li>Save links to read later functionality</li></ul></ul>"
+        "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>"
       }
       
   ];

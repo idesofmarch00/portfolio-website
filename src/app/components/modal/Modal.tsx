@@ -81,13 +81,26 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
             <DescriptionComponent description={data.description as string} />
             </div>
           </ModalContent>
-          <ModalFooter className="gap-4">
-            <Link href={data.code as Url} className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28 text-center">
-              View Code
-            </Link>
-            <Link href={data.link as Url} className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28 text-center">
-              Visit Site
-            </Link>
+          <ModalFooter className="gap-4 -mt-4">
+          <Link
+  href={data.code as Url}
+  className="p-3 bg-blue-500 text-white !h-9 border border-blue-700 rounded-md text-xs w-24 text-center hover:bg-blue-600 hover:border-blue-800 transition-colors duration-300"
+>
+  View Code
+</Link>
+
+
+
+<Link
+  href={data.link as Url}
+  className="!h-9 relative inline-block px-4 py-2 text-sm text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 group"
+>
+  <span className="relative z-10">Visit Site</span>
+  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+</Link>
+
+
+
           </ModalFooter>
         </ModalBody>
       </Modal>
