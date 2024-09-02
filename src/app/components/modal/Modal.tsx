@@ -38,17 +38,17 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
   //   "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   // ];
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center bg-black">
       <Modal>
         <ModalTrigger className="w-full h-full">
           {children}
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
-              <span className="px-1 py-0.5 -mt-4 mb-2 mx-auto text-sm md:text-xl rounded-md bg-gray-100 text-white dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 font-bold text-center w-fit">
+              <span className="px-1 py-0.5 -mt-4 mb-2 mx-auto text-sm md:text-xl rounded-md  text-white bg-neutral-800 border-neutral-700 border font-bold text-center w-fit">
                {data.title}
               </span>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center bg-black">
               {data.images.map((image, idx) => (
                 <motion.div
                   key={"images" + idx}
@@ -65,7 +65,7 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-neutral-800 border-neutral-700 border  flex-shrink-0 overflow-hidden"
                 >
                   <Image
                     src={image}
@@ -77,11 +77,11 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
                 </motion.div>
               ))}
             </div>
-            <div className="pt-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
+            <div className="pt-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto bg-black">
             <DescriptionComponent description={data.description as string} />
             </div>
           </ModalContent>
-          <ModalFooter className="gap-4 -mt-4">
+          <ModalFooter className="gap-4 -mt-4 bg-neutral-900">
           <Link
   href={data.code as Url}
   className="p-3 bg-blue-500 text-white !h-9 border border-blue-700 rounded-md text-xs w-24 text-center hover:bg-blue-600 hover:border-blue-800 transition-colors duration-300"
