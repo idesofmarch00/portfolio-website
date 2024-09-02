@@ -13,7 +13,7 @@ const people = [
     id: 2,
     name: "GitHub",
     image:
-      "https://c0.klipartz.com/pngpicture/346/791/gratis-png-repositorio-del-logo-de-github-computer-icons-github-thumbnail.png",
+      "/images/github.svg",
     link: "https://github.com/idesofmarch00",
   },
   {
