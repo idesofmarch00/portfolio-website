@@ -7,7 +7,6 @@ import Spotlight from "./components/spotlight";
 import  DP  from "./components/dp/DP";
 import Projects from "./components/projects";
 import Button from "./components/button"
-import ProjectsCarousel from "./components/projects-carousel";
 import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
