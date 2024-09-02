@@ -21,7 +21,7 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
     "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
-    <div className="py-10 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <Modal>
         <ModalTrigger className="w-full h-full">
           {children}
