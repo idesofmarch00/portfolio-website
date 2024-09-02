@@ -189,7 +189,7 @@ export default function Resume() {
 </html>`;
 
     return (
-      <div className="min-h-screen relative overflow-hidden text-green-700 bg-black">
+      <div className="pb-4 relative overflow-hidden text-green-700 bg-black">
         <div className="stars-container absolute inset-0 pointer-events-none"></div>
         <div className="container mx-auto px-4 py-8 relative z-10">
           

@@ -16,7 +16,7 @@ const CustomHeader: React.FC = () => {
   ];
 
   return (
-    <header className="bg-black text-white p-4">
+    <header className="bg-gray-950 rounded-xl rounded-t-none text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <nav>
           <ul className="flex space-x-4 text-sm">
