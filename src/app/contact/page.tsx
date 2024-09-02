@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import PageTransition from '../components/PageTransition';
+import GlobeCard from "../components/globe-card";
 
 interface FormData {
   name: string;
@@ -158,11 +159,16 @@ const ContactPage: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-          <p className="mb-6">
-            I&apos;m always excited to connect with new people and discuss potential collaborations. 
-            Whether you have a project in mind or just want to say hello, feel free to reach out!
-          </p>
-          <div className="space-y-4">
+          {/* <p className="mb-2">
+  I&apos;m always excited to connect with new people and discuss potential collaborations.
+  Whether you have a project in mind or just want to say hello, feel free to reach out!
+</p>
+<p className="mb-6">
+  I am available to work remotely and can be reached at any time.
+  I have experience collaborating with teams across different time zones, ensuring smooth and effective communication.
+</p> */}
+          
+          {/* <div className="space-y-4">
             <motion.button
               onClick={handleEmailClick}
               className="flex items-center space-x-3 hover:text-blue-300 transition duration-300"
@@ -185,7 +191,8 @@ const ContactPage: React.FC = () => {
               </svg>
               <span>+1 (123) 456-7890</span>
             </motion.button>
-          </div>
+          </div> */}
+      <GlobeCard/>
         </motion.div>
       </div>
     </div>

@@ -36,7 +36,7 @@ const t2 = [{ "id": 16, "name": "Vitest", "url": "https://vitest.dev/logo.svg" }
 
 export default function Skills() {
   return (
-    <div className="pt-10 rounded-md flex flex-col space-y-2 antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="pt-10 rounded-md flex flex-col space-y-2 antialiased bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={t1}
         direction="right"
