@@ -2,10 +2,12 @@
 import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "../ui/wobble-card";
+import { LinkPreview } from "../ui/link-preview";
+import { ArrowRight } from 'lucide-react'; 
 
 export default function Blogs() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full pb-40">
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
         className=""
@@ -54,6 +56,12 @@ export default function Blogs() {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
         />
       </WobbleCard>
+
+      <LinkPreview url=" https://sahilahmed.hashnode.dev/"><div className="relative flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-white hover:from-white hover:via-blue-500 hover:to-purple-500 transition-colors duration-300 cursor-pointer group">
+  <span>Read All Posts</span>
+  <ArrowRight size={20} color="white" />
+  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 via-blue-500 to-white transition-all duration-300 group-hover:w-1/3"></span>
+</div></LinkPreview>
     </div>
   );
 }
