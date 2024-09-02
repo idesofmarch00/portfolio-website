@@ -1,8 +1,8 @@
 'use client'
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { Download, Copy } from 'lucide-react';
+import { useState } from 'react';
+import { Copy } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Resume() {
     const [isJsonMode, setIsJsonMode] = useState(false);
@@ -14,8 +14,11 @@ export default function Resume() {
 
     const copyContent = () => {
       const content = isJsonMode ? JSON.stringify(resumeData, null, 2) : htmlContent;
-      navigator.clipboard.writeText(content);
-      
+      navigator.clipboard.writeText(content).then(() => {
+        toast.success('Content copied to clipboard!');
+      }).catch(() => {
+        toast.error('Failed to copy content');
+      });
     };
 
     const resumeData = {
@@ -190,6 +193,7 @@ export default function Resume() {
 
     return (
       <div className="pb-4 relative overflow-hidden text-green-700 bg-black">
+        <Toaster />
         <div className="stars-container absolute inset-0 pointer-events-none"></div>
         <div className="container mx-auto px-4 py-8 relative z-10">
           

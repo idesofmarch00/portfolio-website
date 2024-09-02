@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 interface FormData {
   name: string;
@@ -49,12 +51,27 @@ const ContactPage: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // Here you would typically send the data to your server
-      alert('Message sent! (This is a placeholder action)');
+      try {
+        const result = await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+          },
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        );
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } catch (error) {
+        console.error('Failed to send email:', error);
+        toast.error('Failed to send message. Please try again.');
+      }
     }
   };
 
@@ -68,6 +85,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4">
+        <Toaster />
       <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8">
         {/* Contact Form */}
         <motion.div 
@@ -139,7 +157,7 @@ const ContactPage: React.FC = () => {
         >
           <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
           <p className="mb-6">
-            I'm always excited to connect with new people and discuss potential collaborations. 
+            I&apos;m always excited to connect with new people and discuss potential collaborations. 
             Whether you have a project in mind or just want to say hello, feel free to reach out!
           </p>
           <div className="space-y-4">
@@ -173,3 +191,5 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
+
+import '../lib/emailjs-init';
