@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navigation from "./components/navigation";
+import Tools from "./components/tools";
 import  Education  from "./components/education";
 import Name from "./components/name";
 import Designation from "./components/designation";
@@ -27,16 +27,14 @@ export default function Home() {
       <br />
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
-      <div className="flex items-center justify-between"><Navigation />
-      
-      <div className="text-white pl-20 h-96">
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt officia porro fuga eaque deleniti iste atque accusantium sequi explicabo eum, tenetur laboriosam voluptatum sed! Non adipisci molestiae accusamus, nisi est placeat mollitia, iste illo consequatur, ullam minus doloremque voluptas.
-      </p>
+      <div className="flex items-center justify-between"><Tools />
+      <div className="text-white pl-32">
+        <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript. My tech stack includes frameworks like React, React Native, Node.js, and Vue.js, alongside tools such as VS Code, Git, and Docker.</p>
       {/* <GlobeCard/> */}
       <ComputersCanvas />
       </div>
-      
       </div>
+
       <br />
       <Spotlight/>
       <ProjectsCarousel/>

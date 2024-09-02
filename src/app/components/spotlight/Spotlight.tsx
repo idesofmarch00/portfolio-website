@@ -16,7 +16,7 @@ export default function Spotlight() {
         }}
         className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Projects
+        My Projects
       </motion.h1>
     </LampContainer>
   );

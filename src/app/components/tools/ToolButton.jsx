@@ -9,9 +9,9 @@ const item = {
   show: { scale: 1 },
 };
 
-const NavLink = motion(Link);
+const ToolLink = motion(Link);
 
-const NavButton = ({
+const ToolButton = ({
   x,
   y,
   name,
@@ -67,4 +67,4 @@ const NavButton = ({
   );
 };
 
-export default NavButton;
+export default ToolButton;

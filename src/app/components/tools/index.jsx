@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import NavButton from "./NavButton";
+import ToolButton from "./ToolButton";
 import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
@@ -18,7 +18,6 @@ export const BtnList = [
   { name: "Figma", iconUrl: "https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&q=75&fit=max&auto=format&dpr=2" }
 ];
 
-
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -29,7 +28,7 @@ const container = {
   },
 };
 
-const Navigation = () => {
+const Tools = () => {
   const angleIncrement = 360 / BtnList.length;
   const size = useScreenSize();
   const isLarge = size >= 1024;
@@ -56,7 +55,7 @@ const Navigation = () => {
                 const x = `calc(${radius}*${Math.cos(angleRad)})`;
                 const y = `calc(${radius}*${Math.sin(angleRad)})`;
 
-                return <NavButton key={btn.name} x={x} y={y} {...btn} />;
+                return <ToolButton key={btn.name} x={x} y={y} {...btn} />;
               })}
             </motion.div>
           ) : (
@@ -68,7 +67,7 @@ const Navigation = () => {
                 className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 item-start xs:items-center justify-center relative  group xs:hidden"
               >
                 {BtnList.slice(0, BtnList.length / 2).map((btn) => (
-                  <NavButton key={btn.name} x={0} y={0} {...btn} />
+                  <ToolButton key={btn.name} x={0} y={0} {...btn} />
                 ))}
               </motion.div>
 
@@ -79,7 +78,7 @@ const Navigation = () => {
                 className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 items-end xs:items-center justify-center relative group xs:hidden"
               >
                 {BtnList.slice(BtnList.length / 2, BtnList.length).map((btn) => (
-                  <NavButton
+                  <ToolButton
                     key={btn.name}
                     x={0}
                     y={0}
@@ -96,4 +95,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Tools;
