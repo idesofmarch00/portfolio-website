@@ -65,7 +65,6 @@ export function FocusCards({ cards }: { cards: Card[] }) {
           setHovered={setHovered}
         /></AnimatedModal>
       ))}
-      
     </div>
   );
 }
