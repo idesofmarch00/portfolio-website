@@ -31,11 +31,7 @@ export const CustomFooter: React.FC = () => {
           <div className="text-sm mt-4 md:mt-0">
             <p>© 2024 github.com/idesofmarch00 - All rights reserved</p>
             <p>Created by <a href="https://www.linkedin.com/in/sahil-ahmed-" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-400">Sahil Ahmed</a></p>
-            {/* <p>
-              <Link href="/privacy-policy" className="hover:text-blue-400">Privacy Policy</Link>
-              {' | '}
-              <Link href="/terms-of-service" className="hover:text-blue-400">Terms of Service</Link>
-            </p> */}
+          
           </div>
           
           <div className="flex space-x-4">

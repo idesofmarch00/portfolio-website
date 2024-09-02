@@ -19,14 +19,12 @@ const ScrollButton: React.FC = () => {
 
       setScrollPosition(currentScrollTop);
 
-      // Check if at the top or bottom of the document
       if (currentScrollTop === 0 || currentScrollTop + windowHeight >= documentHeight) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
 
-      // Determine scroll direction
       setIsScrollingUp(currentScrollPos < prevScrollPos);
 
       prevScrollPos = currentScrollPos;

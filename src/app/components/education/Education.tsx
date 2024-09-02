@@ -43,7 +43,7 @@ export default function Education() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/images/fuelbuddy/native4.png"
+              src="/images/fuelbuddy/native4.webp"
               alt="startup template"
               width={500}
               height={500}
@@ -124,28 +124,22 @@ export default function Education() {
 <ul className="list-disc pl-5 text-neutral-200 text-xs md:text-sm font-normal mb-8">
   <li>
     <strong>Data Structures and Algorithms:</strong> 
-    {/* Focused on the design, implementation, and analysis of efficient data structures and algorithms, providing a solid grounding in solving complex computational problems. */}
   </li>
   <li>
     <strong>Object-Oriented Programming (OOP):</strong> 
-    {/* Explored the principles of OOP, including encapsulation, inheritance, and polymorphism, with a strong emphasis on coding best practices and software design patterns. */}
   </li>
   <li>
     <strong>Database Management Systems (DBMS):</strong> 
-    {/* Covered the concepts of database design, normalization, SQL, and the management of large-scale databases, ensuring a strong understanding of data storage and retrieval mechanisms. */}
   </li>
   <li>
     <strong>Computer Networks:</strong> 
-    {/* Studied the architecture, protocols, and functioning of computer networks, including topics such as TCP/IP, network security, and wireless communication. */}
   </li>
   <li>
     <strong>Operating Systems:</strong> 
-    {/* Focused on the design and functioning of operating systems, including process management, memory management, file systems, and system security. */}
   </li>
 </ul>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              // src="https://jamiahamdard.edu/uploaded_files/p.jpg"
               src="https://www.jamiahamdard.ac.in/LibrayInformationSystem/images/jamia1.jpeg"
               alt="jamia hamdard cse"
               width={500}
@@ -153,7 +147,6 @@ export default function Education() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7qNbx8Gu7b9yzqyM08WAcDfnOiIDMGxsmWGJuVytNxzScW4Ysa82B2tSFJZJXiE2Bn8&usqp=CAU"
               src="https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/campusview/5a051aa2201a235324182778.jpg"
               alt="jamia hamdard logo"
               width={500}

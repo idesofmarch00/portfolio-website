@@ -53,12 +53,9 @@ export default function Blogs() {
 
       <WobbleCard
   containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] relative"
-  // link=""
 >
   <div className="relative max-w-md p-6">
-    {/* <h2 className="text-left text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-      My Experience Using the React Native IDE in VS Code
-    </h2> */}
+   
     <p className=" text-left text-lg text-neutral-200 pr-20">
       Discover how this IDE as an extension in <strong>VS Code</strong> simplifies <strong>mobile app development for iOS and Android</strong>, offering powerful tools for efficiency and productivity.
     </p>

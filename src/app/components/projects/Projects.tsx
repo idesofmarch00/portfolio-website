@@ -31,9 +31,7 @@ export default function Projects() {
       title: "Type Best Prompt",
       active: false,
       images : [],
-      // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
       src : "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
-      // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
       title: "Snip Chat",

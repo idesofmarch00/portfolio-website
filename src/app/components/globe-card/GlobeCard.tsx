@@ -409,7 +409,6 @@ const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
-      {/* <div className="absolute bottom-0 w-full h-40 bg-gradient-to-b from-transparent to-white pointer-events-none z-0" /> */}
     </div>
   );
 }

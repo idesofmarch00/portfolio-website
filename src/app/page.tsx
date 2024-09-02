@@ -12,7 +12,6 @@ import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
 import TextReveal from "./components/text-reveal";
-import Experience from "./components/experience";
 import ComputersCanvas from "./components/ui/computers";
 import ScrollButton from "./components/scroll-button";
 import PageTransition from "./components/PageTransition";
@@ -46,7 +45,6 @@ export default function Home() {
 
       {/* PROJECTS SECTION */}
       <Spotlight/>
-      {/* <ProjectsCarousel/> */}
       <Projects/>
 
       <br />
@@ -54,7 +52,6 @@ export default function Home() {
       <br id="experience" />
 
       {/* EXPERIENCE EDUCATION SECTION */}
-      {/* <Experience/> */}
       <Education/>
 
       <br />
