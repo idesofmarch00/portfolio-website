@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Copy } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
+import PageTransition from '../components/PageTransition';
 
 export default function Resume() {
     const [isJsonMode, setIsJsonMode] = useState(false);
@@ -192,6 +193,7 @@ export default function Resume() {
 </html>`;
 
     return (
+      <PageTransition>
       <div className="pb-4 relative overflow-hidden text-green-700 bg-black">
         <Toaster />
         <div className="stars-container absolute inset-0 pointer-events-none"></div>
@@ -273,5 +275,6 @@ export default function Resume() {
           }
         `}</style>
       </div>
+      </PageTransition>
     );
 }

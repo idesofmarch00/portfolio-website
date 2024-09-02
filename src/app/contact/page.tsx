@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import PageTransition from '../components/PageTransition';
 
 interface FormData {
   name: string;
@@ -84,6 +85,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
+    <PageTransition>
     <div className="min-h-screen bg-black flex items-center justify-center p-4">
         <Toaster />
       <div className="w-full max-w-6xl flex flex-col md:flex-row gap-8">
@@ -187,6 +189,7 @@ const ContactPage: React.FC = () => {
         </motion.div>
       </div>
     </div>
+    </PageTransition>
   );
 };
 

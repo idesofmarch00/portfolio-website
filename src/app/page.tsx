@@ -16,9 +16,11 @@ import Experience from "./components/experience";
 import GlobeCard from "./components/globe-card";
 import ComputersCanvas from "./components/ui/computers";
 import ScrollButton from "./components/scroll-button";
+import PageTransition from "./components/PageTransition";
 
 export default function Home() {
   return (
+    <PageTransition>
     <main className="flex min-h-screen flex-col items-center justify-between bg-black px-32">
       <ScrollButton/>
 
@@ -62,5 +64,6 @@ export default function Home() {
       <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
       <Blogs/>
     </main>
+    </PageTransition>
   );
 }
