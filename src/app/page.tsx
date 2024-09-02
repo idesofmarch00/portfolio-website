@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Tools from "./components/tools";
 import  Education  from "./components/education";
 import Name from "./components/name";
@@ -16,12 +15,17 @@ import TextReveal from "./components/text-reveal";
 import Experience from "./components/experience";
 import GlobeCard from "./components/globe-card";
 import ComputersCanvas from "./components/ui/computers";
+import ScrollButton from "./components/scroll-button";
+import PageTransition from "./components/PageTransition";
 
 export default function Home() {
   return (
+    <PageTransition>
     <main className="flex min-h-screen flex-col items-center justify-between bg-black px-32">
+      <ScrollButton/>
+
       {/* HERO SECTION */}
-      <div className="flex justify-between items-start px-10 space-x-4 pt-20 bg-black">
+      <div className="flex justify-between items-start px-10 space-x-4 pt-4 bg-black">
       <div className="flex flex-col w-1/2"><DP/><Socials/></div>
       <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><div className="flex items-center justify-center space-x-6"><Button text="Download Resume"/><Button text="Contact Me"/></div></div>
       </div>
@@ -60,5 +64,6 @@ export default function Home() {
       <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
       <Blogs/>
     </main>
+    </PageTransition>
   );
 }
