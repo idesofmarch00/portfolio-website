@@ -15,6 +15,7 @@ import Skills from "./components/skills";
 import TextReveal from "./components/text-reveal";
 import Experience from "./components/experience";
 import GlobeCard from "./components/globe-card";
+import ComputersCanvas from "./components/ui/computers";
 
 export default function Home() {
   return (
@@ -26,8 +27,16 @@ export default function Home() {
       <br />
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
-      <div className="flex items-center justify-between"><Navigation /><div className="text-white pl-20 h-96"><p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt officia porro fuga eaque deleniti iste atque accusantium sequi explicabo eum, tenetur laboriosam voluptatum sed! Non adipisci molestiae accusamus, nisi est placeat mollitia, iste illo consequatur, ullam minus doloremque voluptas.
-      </p><GlobeCard/></div></div>
+      <div className="flex items-center justify-between"><Navigation />
+      
+      <div className="text-white pl-20 h-96">
+        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt officia porro fuga eaque deleniti iste atque accusantium sequi explicabo eum, tenetur laboriosam voluptatum sed! Non adipisci molestiae accusamus, nisi est placeat mollitia, iste illo consequatur, ullam minus doloremque voluptas.
+      </p>
+      {/* <GlobeCard/> */}
+      <ComputersCanvas />
+      </div>
+      
+      </div>
       <br />
       <Spotlight/>
       <ProjectsCarousel/>
