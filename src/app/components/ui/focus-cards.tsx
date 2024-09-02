@@ -4,6 +4,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "../../lib/utils";
 import { AnimatedModal } from "../modal";
+import { Url } from "url";
+import { Card as CardType } from "../projects/Projects"
 
 export const Card = React.memo(
   ({
@@ -40,7 +42,7 @@ export const Card = React.memo(
         <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
           {hovered === index
             ? card.active
-              ? "Click here"
+              ? card.title
               : "Coming soon ..."
             : card.title}
         </div>
@@ -48,7 +50,7 @@ export const Card = React.memo(
       {hovered !== index && (
         <div className="absolute inset-0 flex items-end py-8 px-4">
           <div className="text-xl md:text-2xl font-medium text-white">
-            {card.title}
+            {card.active ? " " : card.title}
           </div>
         </div>
       )}
@@ -59,14 +61,8 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-type Card = {
-  title: string;
-  src: string;
-  active: boolean;
-  link: string;
-};
 
-export function FocusCards({ cards }: { cards: Card[] }) {
+export function FocusCards({ cards }: { cards: CardType[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (

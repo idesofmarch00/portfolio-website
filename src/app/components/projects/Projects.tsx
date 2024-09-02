@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { FocusCards } from "../../components/ui/focus-cards";
 import { ArrowRight } from 'lucide-react'; 
+import { Url } from "url";
 
 const ColorfulLink = () => {
   return (
@@ -14,26 +15,41 @@ const ColorfulLink = () => {
   );
 };
 
+export type Card = {
+  title: string;
+  src: string;
+  active: boolean;
+  link?: Url | string;
+  code?: Url | string;
+  description?: string;
+};
+
 export default function Projects() {
-  const cards = [
+  const cards : Card[] = [
     {
       title: "Type Best Prompt",
-      link:"",
       active: false,
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
+      src : "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
+      // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
       title: "Snip Chat",
       active : true,
+      code: "https://github.com/idesofmarch00/snip-chat",
       link: "https://snip-chat.netlify.app",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/snip-chat.png",
+        "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>Sending snaps, images, and location information</li><li>Real-time notifications and service workers for enhanced engagement and offline functionality</li><li>A unique feature to discover and add random users nearby, fostering new connections</li></ul></ul>"
     },
     {
       title: "SwissArmyKnife NewTab",
       link: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
+      code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
       active : true,
-      src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+      src: "/images/chrome-extension.png",
+        "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>Real-time Bitcoin price and weather updates</li><li>Site blocker, Pomodoro timer, and To-Do list to enhance focus</li><li>Save links to read later functionality</li></ul></ul>"
+      }
+      
   ];
 
   return <><FocusCards cards={cards} /><ColorfulLink/></>;
