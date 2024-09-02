@@ -7,10 +7,12 @@ export const WobbleCard = ({
   children,
   containerClassName,
   className,
+  link,
 }: {
   children: React.ReactNode;
   containerClassName?: string;
   className?: string;
+  link?: string; // New prop to specify the link
 }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -22,6 +24,13 @@ export const WobbleCard = ({
     const y = (clientY - (rect.top + rect.height / 2)) / 20;
     setMousePosition({ x, y });
   };
+
+  const handleClick = () => {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <motion.section
       onMouseMove={handleMouseMove}
@@ -30,11 +39,13 @@ export const WobbleCard = ({
         setIsHovering(false);
         setMousePosition({ x: 0, y: 0 });
       }}
+      onClick={handleClick} // Add onClick event to open the link
       style={{
         transform: isHovering
           ? `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) scale3d(1, 1, 1)`
           : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
         transition: "transform 0.1s ease-out",
+        cursor: link ? "pointer" : "default", // Change cursor to pointer if link is provided
       }}
       className={cn(
         "mx-auto w-full bg-indigo-800  relative rounded-2xl overflow-hidden",
