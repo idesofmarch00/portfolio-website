@@ -9,26 +9,28 @@ export default function Blogs() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full pb-40">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >
-        <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
-          </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
-          </p>
-        </div>
-        <Image
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
+  containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px] relative flex items-center"
+>
+  <Image
+    src="https://cdn.hashnode.com/res/hashnode/image/upload/v1724934196930/bde74906-a8ad-475d-a53e-9f50bb711458.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+    width={500}
+    height={500}
+    alt="Globalization in Vue.js"
+    className="absolute left-20 bottom-14 -translate-x-1/4 lg:-translate-x-1/2 object-contain rounded-2xl"
+  />
+  <div className="relative max-w-md ml-80">
+    <p className="text-left text-base text-white">
+      Explore the steps to integrate <strong>internationalization and local Indian languages</strong> into your Vue.js application, making it accessible to a global audience with ease.
+    </p>
+    <a
+      href="https://sahilahmed.hashnode.dev/how-to-globalize-your-vuejs-app-with-i18n-a-step-by-step-guide"
+      className="mt-6 inline-block text-left text-neutral-200 underline hover:text-white"
+    >
+      Read the full article
+    </a>
+  </div>
+</WobbleCard>
+
       
       <WobbleCard containerClassName="col-span-1 min-h-[300px] border border-neutral-600 rounded-2xl overflow-hidden">
     <Image
@@ -42,7 +44,7 @@ export default function Blogs() {
       <h3 className="text-lg font-semibold">Firebase Cloud Messaging Push Notifications</h3>
       <a
         href="https://sahilahmed.hashnode.dev/implementing-firebase-cloud-messaging-in-a-react-ios-android-pwa-a-comprehensive-guide"
-        className="mt-2 block text-base underline hover:text-white"
+        className="mt-2 block text-base underline text-gray-400 hover:text-white hover:font-bold"
       >
         Read the full article
       </a>
@@ -58,7 +60,7 @@ export default function Blogs() {
       My Experience Using the React Native IDE in VS Code
     </h2> */}
     <p className=" text-left text-lg text-neutral-200 pr-20">
-      Discover how this IDE as an extension in VS Code simplifies mobile app development for iOS and Android, offering powerful tools for efficiency and productivity.
+      Discover how this IDE as an extension in <strong>VS Code</strong> simplifies <strong>mobile app development for iOS and Android</strong>, offering powerful tools for efficiency and productivity.
     </p>
     <a
       href="https://sahilahmed.hashnode.dev/my-experience-using-the-react-native-ide-in-vs-code"
