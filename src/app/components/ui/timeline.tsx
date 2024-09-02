@@ -39,7 +39,7 @@ export const Timeline = ({ children,data }: { children:React.ReactNode ,data: Ti
     >
       {children}
 
-      <div ref={ref} className="relative max-w-7xl mx-auto -mt-12 pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto -mt-32 pb-20">
         {data.map((item, index) => (
           <div
             key={index}
