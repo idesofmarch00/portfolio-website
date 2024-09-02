@@ -1,14 +1,69 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+'use client'
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const ContactPage = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
-  const onSubmit = (data) => {
-    console.log(data);
-    // Here you would typically send the data to your server or a service like EmailJS
-    alert('Message sent! (This is a placeholder action)');
+interface FormErrors {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+}
+
+const ContactPage: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState<FormErrors>({});
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const validateForm = (): boolean => {
+    let newErrors: FormErrors = {};
+    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)) {
+      newErrors.email = 'Invalid email address';
+    }
+    if (formData.phone && !/^[0-9]{10}$/.test(formData.phone)) {
+      newErrors.phone = 'Invalid phone number';
+    }
+    if (!formData.message.trim()) newErrors.message = 'Message is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log(formData);
+      // Here you would typically send the data to your server
+      alert('Message sent! (This is a placeholder action)');
+    }
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:dummy@gmail.com';
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+11234567890';
   };
 
   return (
@@ -22,50 +77,47 @@ const ContactPage = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl font-bold mb-6 text-white">Contact Me</h2>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <input
-                {...register('name', { required: 'Name is required' })}
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-2 bg-white bg-opacity-20 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-300"
                 placeholder="Name"
               />
-              {errors.name && <span className="text-red-400 text-sm">{errors.name.message}</span>}
+              {errors.name && <span className="text-red-400 text-sm">{errors.name}</span>}
             </div>
             <div>
               <input
-                {...register('email', { 
-                  required: 'Email is required',
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "Invalid email address"
-                  }
-                })}
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-2 bg-white bg-opacity-20 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-300"
                 placeholder="Email"
               />
-              {errors.email && <span className="text-red-400 text-sm">{errors.email.message}</span>}
+              {errors.email && <span className="text-red-400 text-sm">{errors.email}</span>}
             </div>
             <div>
               <input
-                {...register('phone', { 
-                  pattern: {
-                    value: /^[0-9]{10}$/,
-                    message: "Invalid phone number"
-                  }
-                })}
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 className="w-full p-2 bg-white bg-opacity-20 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-300"
                 placeholder="Phone (optional)"
               />
-              {errors.phone && <span className="text-red-400 text-sm">{errors.phone.message}</span>}
+              {errors.phone && <span className="text-red-400 text-sm">{errors.phone}</span>}
             </div>
             <div>
               <textarea
-                {...register('message', { required: 'Message is required' })}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-2 bg-white bg-opacity-20 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 text-white placeholder-gray-300"
                 placeholder="Message"
-                rows="4"
+                rows={4}
               ></textarea>
-              {errors.message && <span className="text-red-400 text-sm">{errors.message.message}</span>}
+              {errors.message && <span className="text-red-400 text-sm">{errors.message}</span>}
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -91,18 +143,28 @@ const ContactPage = () => {
             Whether you have a project in mind or just want to say hello, feel free to reach out!
           </p>
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <motion.button
+              onClick={handleEmailClick}
+              className="flex items-center space-x-3 hover:text-blue-300 transition duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span>dummy@gmail.com</span>
-            </div>
-            <div className="flex items-center space-x-3">
+            </motion.button>
+            <motion.button
+              onClick={handlePhoneClick}
+              className="flex items-center space-x-3 hover:text-blue-300 transition duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               <span>+1 (123) 456-7890</span>
-            </div>
+            </motion.button>
           </div>
         </motion.div>
       </div>
