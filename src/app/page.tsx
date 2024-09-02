@@ -28,8 +28,8 @@ export default function Home() {
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
       <div className="flex items-center justify-between"><Tools />
-      <div className="text-white pl-32">
-        <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript. My tech stack includes frameworks like React, React Native, Node.js, and Vue.js, alongside tools such as VS Code, Git, and Docker.</p>
+      <div className="text-white pl-24 h-96 -mt-20">
+        <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript.My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
       {/* <GlobeCard/> */}
       <ComputersCanvas />
       </div>
