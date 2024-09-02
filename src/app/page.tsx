@@ -13,7 +13,6 @@ import Socials from "./components/socials";
 import Skills from "./components/skills";
 import TextReveal from "./components/text-reveal";
 import Experience from "./components/experience";
-import GlobeCard from "./components/globe-card";
 import ComputersCanvas from "./components/ui/computers";
 import ScrollButton from "./components/scroll-button";
 import PageTransition from "./components/PageTransition";
@@ -39,7 +38,6 @@ export default function Home() {
       <div className="flex items-center justify-between"><Tools />
       <div className="text-white pl-24 h-96 -mt-20">
         <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript. My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
-      {/* <GlobeCard/> */}
       <ComputersCanvas />
       </div>
       </div>
