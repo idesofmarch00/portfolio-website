@@ -11,16 +11,16 @@ export default function Education() {
       content: (
         <div>
   <div>
-  <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+  <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
          Software Engineer at {" "}<LinkPreview url="https://www.fuelbuddy.in/" className="font-bold">
           FuelBuddy
         </LinkPreview>
         <br /> Gurugram, India.
        </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-bold mb-8">
+          <p className=" text-neutral-200 text-xs md:text-lg font-bold mb-8">
             Awarded Performer of the Month of September , 2023 for delivering critical business features within tight deadlines.
           </p>
-          <ul className="list-disc list-inside text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 flex flex-col space-y-2">
+          <ul className="list-disc list-inside text-neutral-200 text-xs md:text-sm font-normal mb-8 flex flex-col space-y-2">
             <li>Developing customer facing fuel delivery app using React, React Native, Redux, Urql and Google Maps.</li>
             <li>Implemented multi-language support for local Indian languages in addition to English, expanding the driver base by 40% and increasing success rates for onboarding.</li>
             <li>Integrated real-time notification functionality and authentication using Firebase, ensuring drivers were always informed of critical updates and order changes.</li>
@@ -65,13 +65,13 @@ export default function Education() {
       content: (
         <div>
           <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+          <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
          Software Engineer at {" "}<LinkPreview url="https://www.bing.com/search?q=fuelbuddy&cvid=d57f070018204d5a953ac1f6662648b5&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQRRg8MgYICBBFGEHSAQgyNDg0ajBqNKgCCLACAQ&FORM=ANAB01&PC=U531/" className="font-bold">
           FuelBuddy
         </LinkPreview>
         <br /> Gurugram, India.
        </p>
-        <ul className="list-disc list-inside text-neutral-800 dark:text-neutral-200 font-normal pb-4 flex flex-col space-y-2">
+        <ul className="list-disc list-inside text-neutral-200 font-normal pb-4 flex flex-col space-y-2">
           <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging Vue.js, Pinia,Tailwind CSS and GraphQL for delivery partners and operations team called the <strong><LinkPreview url="https://play.google.com/store/apps/details?id=in.fuelbuddy.driver&hl=en" className="font-bold">
           Driver App
         </LinkPreview></strong>. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
@@ -116,12 +116,12 @@ export default function Education() {
       title: "2019-2023",
       content: (
         <div>
-  <p className="text-neutral-800 dark:text-neutral-200 md:text-xl font-bold pb-4">
+  <p className="text-neutral-200 md:text-xl font-bold pb-4">
   I hold a Bachelor of Technology (B.Tech) degree in Computer Science Engineering from  
   <span className="font-medium"> Jamia Hamdard University, Delhi, India</span>. 
 </p>
-<p className="text-neutral-800 dark:text-neutral-200 md:text-sm font-normal pb-2">My coursework included an in-depth study of various key subjects essential for a strong foundation in computer science:</p>
-<ul className="list-disc pl-5 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+<p className="text-neutral-200 md:text-sm font-normal pb-2">My coursework included an in-depth study of various key subjects essential for a strong foundation in computer science:</p>
+<ul className="list-disc pl-5 text-neutral-200 text-xs md:text-sm font-normal mb-8">
   <li>
     <strong>Data Structures and Algorithms:</strong> 
     {/* Focused on the design, implementation, and analysis of efficient data structures and algorithms, providing a solid grounding in solving complex computational problems. */}
