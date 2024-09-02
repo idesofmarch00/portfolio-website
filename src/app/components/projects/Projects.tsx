@@ -42,7 +42,7 @@ export default function Projects() {
     "/images/chat-app/splash.png",
     "/images/chat-app/chat.jpg",
     "/images/chat-app/users.png",
-    "/images/chat-app/map.jpeg",
+    "/images/chat-app/map.webp",
     "/images/chat-app/drawer.png"
   ],
       src: "/images/chat-app/snip-chat.png",
@@ -55,12 +55,12 @@ export default function Projects() {
       active : true,
       images : [
         "/images/extension/links.png",
-       "/images/extension/chrome-extension.png",
+       "/images/extension/chrome-extension.webp",
        "/images/extension/focus.png",
        "/images/extension/blocked.png",
        "/images/extension/settings.png",
       ],
-      src: "/images/extension/chrome-extension.png",
+      src: "/images/extension/chrome-extension.webp",
         "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>"
       }
   ];
