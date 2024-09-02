@@ -17,6 +17,7 @@ export default function Education() {
             Awarded Performer of the Month of September , 2023 for delivering critical business features within tight deadlines.
           </p>
           <ul className="list-disc list-inside text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 flex flex-col space-y-2">
+            <li>Developing customer facing fuel delivery app using React, React Native, Redux, Urql and Google Maps.</li>
             <li>Implemented multi-language support for local Indian languages in addition to English, expanding the driver base by 40% and increasing success rates for onboarding.</li>
             <li>Integrated real-time notification functionality and authentication using Firebase, ensuring drivers were always informed of critical updates and order changes.</li>
             <li>Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling, leading to the prevention of manual errors by 44% and reducing fuel pilferage.</li>
@@ -64,7 +65,7 @@ export default function Education() {
           Software Engineer at FuelBuddy, Gurugram, India.
         </p>
         <ul className="list-disc list-inside text-neutral-800 dark:text-neutral-200 font-normal pb-4 flex flex-col space-y-2">
-          <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging React, React Native, Redux, Vue, and GraphQL. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
+          <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging Vue.js, Pinia,Tailwind CSS and GraphQL for delivery partners and operations team. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
           <li>Integrated Mapbox and UI libraries for designing intuitive location tracking and order visualization views, reducing average delivery times by 50 minutes per order.</li>
           <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams, resulting in a 32% increase in dispensing accuracy.</li>
         </ul>
