@@ -46,8 +46,12 @@ export default function Home() {
       {/* <ProjectsCarousel/> */}
       <Projects/>
 
+      <br />
+      <br />
+      <br />
+
       {/* EXPERIENCE EDUCATION SECTION */}
-      <Experience/>
+      {/* <Experience/> */}
       <Education/>
 
       <br />
