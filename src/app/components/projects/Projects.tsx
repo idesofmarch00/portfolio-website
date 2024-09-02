@@ -22,6 +22,7 @@ export type Card = {
   link?: Url | string;
   code?: Url | string;
   description?: string;
+  images: string[];
 };
 
 export default function Projects() {
@@ -29,6 +30,7 @@ export default function Projects() {
     {
       title: "Type Best Prompt",
       active: false,
+      images : [],
       // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
       src : "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
@@ -38,7 +40,14 @@ export default function Projects() {
       active : true,
       code: "https://github.com/idesofmarch00/snip-chat",
       link: "https://snip-chat.netlify.app",
-      src: "/images/snip-chat.png",
+        images : [
+    "/images/chat-app/splash.png",
+    "/images/chat-app/chat.jpg",
+    "/images/chat-app/users.png",
+    "/images/chat-app/map.jpeg",
+    "/images/chat-app/drawer.png"
+  ],
+      src: "/images/chat-app/snip-chat.png",
         "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>"
     },
     {
@@ -46,10 +55,16 @@ export default function Projects() {
       link: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
       code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
       active : true,
-      src: "/images/chrome-extension.png",
+      images : [
+        "/images/extension/links.png",
+       "/images/extension/chrome-extension.png",
+       "/images/extension/focus.png",
+       "/images/extension/blocked.png",
+       "/images/extension/settings.png",
+      ],
+      src: "/images/extension/chrome-extension.png",
         "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>"
       }
-      
   ];
 
   return <><FocusCards cards={cards} /><ColorfulLink/></>;
