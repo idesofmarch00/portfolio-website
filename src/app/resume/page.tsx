@@ -2,9 +2,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Download, Copy } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function Resume() {
     const [isJsonMode, setIsJsonMode] = useState(false);
+    const router = useRouter();
 
     const toggleMode = () => {
       setIsJsonMode(!isJsonMode);
@@ -187,27 +189,32 @@ export default function Resume() {
 </html>`;
 
     return (
-      <div className="min-h-screen relative overflow-hidden text-green-700 bg-gray-800">
+      <div className="min-h-screen relative overflow-hidden text-green-700 bg-black">
         <div className="stars-container absolute inset-0 pointer-events-none"></div>
         <div className="container mx-auto px-4 py-8 relative z-10">
-          <div className="flex justify-end mb-8 space-x-4">
-            <Link href="/resume.pdf" download="Sahil_Ahmed_Resume">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center">
-                <Download className="mr-2" size={18} />
-                Download Resume
-              </button>
-            </Link>
-          </div>
+          
 
-          <div className="max-w-4xl mx-auto bg-black rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-gray-700 px-4 py-2 flex items-center space-x-2">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="max-w-4xl mx-auto bg-black rounded-lg shadow-lg overflow-hidden border border-white">
+            <div className="bg-gray-700 px-4 py-2 flex items-center space-x-2 relative">
+                          <div className="cursor-pointer w-3 h-3 rounded-full bg-red-500 flex items-center justify-center" onClick={()=>{router.replace('/')}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-white" viewBox="0 0 20 20" fill="black">
+                              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <div className="cursor-pointer w-3 h-3 rounded-full bg-yellow-500 flex items-center justify-center" onClick={()=>{router.push('/')}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-white" viewBox="0 0 20 20" fill="black">
+                              <path fillRule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <div className="cursor-pointer w-3 h-3 rounded-full bg-green-500 flex items-center justify-center" onClick={()=>{router.push('https://drive.google.com/file/d/1TsNL5ZILgE02dEl1o9lA04NPntyyoIo8/view?usp=sharing')}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-2 w-2 text-white" viewBox="0 0 20 20" fill="black">
+                              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
+                            </svg>
+                          </div>
               <span className="ml-2 text-sm font-mono">resume.{isJsonMode ? 'json' : 'html'}</span>
-              <button
+             <div className='absolute right-4 flex items-center space-x-4'> <button
                 onClick={toggleMode}
-                className="ml-auto bg-gray-600 text-white px-2 py-1 rounded text-xs"
+                className="ml-auto bg-gray-600 text-white px-2 py-1 rounded text-xs place-self-end"
               >
                 {isJsonMode ? 'Switch to HTML' : 'Switch to JSON'}
               </button>
@@ -217,7 +224,7 @@ export default function Resume() {
               >
                 <Copy size={12} className="mr-1" />
                 Copy
-              </button>
+              </button></div>
             </div>
             <div className="p-6 font-mono text-sm h-[70vh] overflow-y-auto custom-scrollbar">
               <pre className="whitespace-pre-wrap">
