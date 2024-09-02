@@ -4,7 +4,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Home, Phone, Mail, FileText,ContactRound, Download } from 'lucide-react';
+import { Home, Phone, Mail, FileText,ContactRound, Download , Rss } from 'lucide-react';
 
 const CustomHeader: React.FC = () => {
   const pathname = usePathname();
@@ -12,7 +12,12 @@ const CustomHeader: React.FC = () => {
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
     { path: '/contact', icon: ContactRound, label: 'Contact' },
+    {
+      label: 'Blog',
+      icon:Rss,
+      path: 'https://sahilahmed.hashnode.dev/'},
     { path: '/resume', icon: FileText, label: 'Resume' },
+    
   ];
 
   return (
