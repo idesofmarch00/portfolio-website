@@ -15,36 +15,35 @@ export const AnimatedTooltip = ({
   items: {
     id: number;
     name: string;
-    designation: string;
     image: string;
+    link: string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
-  const x = useMotionValue(0); // going to set this value on mouse move
-  // rotate the tooltip
+  const x = useMotionValue(0);
   const rotate = useSpring(
     useTransform(x, [-100, 100], [-45, 45]),
     springConfig
   );
-  // translate the tooltip
   const translateX = useSpring(
     useTransform(x, [-100, 100], [-50, 50]),
     springConfig
   );
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
-    x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
+    x.set(event.nativeEvent.offsetX - halfWidth);
   };
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="px-1 relative group hover:cursor-pointer"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => window.open(item.link, "_blank")} // Open link in new tab
         >
           <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
@@ -73,11 +72,10 @@ export const AnimatedTooltip = ({
                 <div className="font-bold text-white relative z-30 text-base">
                   {item.name}
                 </div>
-                <div className="text-white text-xs">{item.designation}</div>
               </motion.div>
             )}
           </AnimatePresence>
-          
+
           <Image
             onMouseMove={handleMouseMove}
             height={100}
