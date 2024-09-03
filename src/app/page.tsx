@@ -51,7 +51,7 @@ export default function Home() {
       <Intro />
     </div>
     
-    <div className="flex flex-row items-center justify-center md:justify-start space-x-4 pt-28 md:pt-0 mt-4">
+    <div className="flex flex-row w-full items-center justify-center space-x-4 pt-28 md:pt-0 mt-4 md:mt-0">
       <Button text="Experience" href="#experience" />
       <Button text="Projects" href="#projects" />
     </div>
@@ -63,12 +63,20 @@ export default function Home() {
       {/* SKILLS SECTION */}
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
-      <div className="flex items-center justify-between"><Tools />
+      <div className="hidden md:flex items-center justify-between"><Tools />
       <div className="text-white pl-24 h-96 -mt-20">
         <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript. My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
       <ComputersCanvas />
       </div>
       </div>
+
+      <div className="pt-20 md:hidden">
+      <div className="flex flex-col items-center text-white -mt-20">
+        <p className="font-bold mx-10">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript.</p>
+        <p className="font-bold mx-10">My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
+      <div className="w-96 -mt-10"><ComputersCanvas /></div>
+      </div>
+      </div>
 
       <br id="projects" />
 
