@@ -1,11 +1,15 @@
+import Image from "next/image";
 import { GlareCard } from "../ui/glare-card";
 
 export default function GlareCardDemo() {
   return (
     <GlareCard className="flex flex-col items-center justify-center">
-       <img
+       <Image
           className="h-full w-full absolute inset-0 object-cover"
-          src="../../sahil.jpeg"
+          width={256}
+          height={256}
+          alt="Sahil Ahmed Profile Pic"
+          src="/sahil.jpeg"
         />
     </GlareCard>
   );
