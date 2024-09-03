@@ -1,3 +1,4 @@
+'use client'
 import Tools from "./components/tools";
 import  Education  from "./components/education";
 import Name from "./components/name";
@@ -14,16 +15,22 @@ import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
 import TextReveal from "./components/text-reveal";
-import Experience from "./components/experience";
 import ComputersCanvas from "./components/ui/computers";
 import ScrollButton from "./components/scroll-button";
 import PageTransition from "./components/PageTransition";
 import { LinkPreview } from "./components/ui/link-preview";
 import { ArrowRight } from 'lucide-react'; 
+import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+
   return (
     <PageTransition>
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 z-50"
+        style={{ scaleX: scrollYProgress }}
+      />
     <main className="flex min-h-screen flex-col items-center justify-between bg-black px-32">
       <ScrollButton/>
 
@@ -96,7 +103,6 @@ export default function Home() {
       <br id="experience" />
 
       {/* EXPERIENCE EDUCATION SECTION */}
-      {/* <Experience/> */}
       <Education/>
 
       <br />
