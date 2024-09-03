@@ -15,6 +15,8 @@ import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "../hooks/useOutsideClick";
+import Link from "next/link"
+import { ArrowRight } from 'lucide-react';
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -26,6 +28,18 @@ type Card = {
   title: string;
   category: string;
   content: React.ReactNode;
+};
+
+const ColorfulLink = () => {
+  return (
+    <Link href="https://github.com/idesofmarch00" passHref className="relative pt-2">
+      <div className="flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 cursor-pointer group">
+        <span>View All Projects</span>
+        <ArrowRight size={20} color="white" /> 
+      <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-[85%]"></span>
+      </div>
+    </Link>
+  );
 };
 
 export const CarouselContext = createContext<{
@@ -132,8 +146,10 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-2 mt-2">
-          <button
+        <div className="!z-0 flex justify-between pl-5 pr-2 mt-2">
+
+          <ColorfulLink/>
+          <div className="flex items-center gap-2"><button
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
@@ -146,7 +162,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             disabled={!canScrollRight}
           >
             <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
-          </button>
+          </button></div>
         </div>
       </div>
     </CarouselContext.Provider>

@@ -37,9 +37,20 @@ const config: Config = {
       'spin-reverse':{
         '0%': {transform: 'rotate(0deg)'},
         '100%': {transform: 'rotate(-360deg)'}
-      }
+      },
+      'gradient-x': {
+        '0%, 100%': {
+          'background-size': '200% 200%',
+          'background-position': 'left center',
+        },
+        '50%': {
+          'background-size': '200% 200%',
+          'background-position': 'right center',
+        },
+      },
       },
       animation:{
+        'gradient-x': 'gradient-x 15s ease infinite',
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         'spin-slow': 'spin 40s linear infinite',
