@@ -41,7 +41,7 @@ export default function Blogs() {
       className="w-96 rounded-xl scale-125 mb-20"
     />
     <div className="absolute bottom-0 left-0 w-full bg-neutral-800 p-4 text-white">
-      <h3 className="text-lg font-semibold">Firebase Cloud Messaging Push Notifications</h3>
+      <h1 className="text-lg font-semibold">Firebase Cloud Messaging Push Notifications</h1>
       <a
         href="https://sahilahmed.hashnode.dev/implementing-firebase-cloud-messaging-in-a-react-ios-android-pwa-a-comprehensive-guide"
         className="mt-2 block text-base underline text-gray-400 hover:text-white hover:font-bold"

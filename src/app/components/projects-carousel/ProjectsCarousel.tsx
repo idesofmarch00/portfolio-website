@@ -29,7 +29,7 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
     <div className="bg-[#F5F5F7] p-4 sm:p-6 md:p-8 lg:p-14 rounded-3xl mb-4">
       <Image
         src={project.src}
-        alt={project.title}
+        alt={project.title + "image"}
         height={500}
         width={500}
         className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto mx-auto object-contain mt-4 mb-4"
