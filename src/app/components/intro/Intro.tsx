@@ -18,22 +18,8 @@ export default function Intro() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="h-72 pt-2 font-bold text-white max-w-xl leading-relaxed  mx-auto text-xl"
+        className="h-72 pt-2 font-bold text-white max-w-xl leading-relaxed mx-auto text-xl"
       > 
-{/* with over 
-        <Highlight className="text-black dark:text-white">
-        2 years of experience
-        </Highlight>and a knack for building <Highlight className="text-black dark:text-white">scalable, 
-        high-performance solutions</Highlight> that make a real difference.
-         My journey in software development has been fueled by an insatiable curiosity 
-         to craft  <Highlight className="text-black dark:text-white">
-         user-centric web and mobile applications
-        </Highlight>. 
-         I take pride in writing <Highlight className="text-black dark:text-white">clean, high-quality code</Highlight> that solves real-world problems.
-         <br />
-         And on those rare days when my eyes and fingers need a break from the screens and keyboard , you&apos;`ll find me immersed in <Highlight className="text-black dark:text-white">literature, 
-         kicking a football around, or indulging in good food.</Highlight> */}
-
 with over 
         <Highlight className="text-white">
         2 years of experience

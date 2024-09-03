@@ -33,6 +33,17 @@ const t2 = [{ "id": 16, "name": "Vitest", "url": "https://vitest.dev/logo.svg" }
   { "id": 26, "name": "React Testing Library", "url": "https://testing-library.com/img/octopus-64x64.png" },
   { "id": 27, "name": "GraphQL", "url": "https://graphql.org/img/logo.svg" },
   { "id": 28, "name": "urql", "url": "https://raw.githubusercontent.com/urql-graphql/urql/main/packages/site/src/assets/sidebar-badge.svg" }]
+const t3 = [
+  { "id": 29, "name": "Git", "url": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
+  { "id": 30, "name": "Docker", "url": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" },
+  { "id": 31, "name": "Google Cloud Platform", "url": "https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-cloud-icon-vector-PNG.png" },
+  { "id": 32, "name": "MongoDB", "url": "https://www.mongodb.com/assets/images/global/favicon.ico" },
+  { "id": 33, "name": "PWA", "url": "https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png" },
+  { "id": 34, "name": "WebSockets", "url": "https://socket.io/images/logo-dark.svg" },
+  { "id": 35, "name": "LLMs", "url": "https://seeklogo.com/images/M/microsoft-365-copilot-logo-44BA459F18-seeklogo.com.png" },
+  { "id": 36, "name": "VS Code", "url": "https://code.visualstudio.com/favicon.ico" },
+  { "id": 37, "name": "Figma", "url": "https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&q=75&fit=max&auto=format&dpr=2" }
+];
 
 export default function Skills() {
   return (
@@ -45,6 +56,10 @@ export default function Skills() {
         items={t2}
         direction="left"
       />
+      <div className="md:hidden"><InfiniteMovingCards
+        items={t3}
+        direction="right"
+      /></div>
     </div>
   );
 }

@@ -7,30 +7,30 @@ export default function FloatingNavHeader() {
     {
       name: "Home",
       link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className="h-6 w-6 mx-2 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Resume",
       link: "/resume",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconUser className="h-6 w-6 mx-2 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
       link: "/contact",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconMessage className="h-6 w-6 mx-2 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "Blog",
       link: "https://sahilahmed.hashnode.dev/",
       icon: (
-        <IconNews className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconNews className="h-6 w-6 mx-2 text-neutral-500 dark:text-white" />
       ),
     },
   ];
   return (
-    <div className="relative  w-full">
+    <div className="invisible sm:visible relative w-full">
       <FloatingNav navItems={navItems} />
     </div>
   );

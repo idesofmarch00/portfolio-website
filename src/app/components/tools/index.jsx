@@ -5,7 +5,6 @@ import useScreenSize from "../hooks/useScreenSize";
 import ResponsiveComponent from "../ResponsiveComponent";
 import { motion } from "framer-motion";
 
-// data.js
 export const BtnList = [
   { name: "Git", iconUrl: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { name: "Docker", iconUrl: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" },
