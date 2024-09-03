@@ -30,7 +30,7 @@ export default function FloatingNavHeader() {
     },
   ];
   return (
-    <div className="relative  w-full">
+    <div className="hidden sm:visible relative w-full">
       <FloatingNav navItems={navItems} />
     </div>
   );

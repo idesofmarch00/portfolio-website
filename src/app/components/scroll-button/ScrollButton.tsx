@@ -50,7 +50,7 @@ const ScrollButton: React.FC = () => {
       {isVisible && (
         <motion.button
           className={`fixed z-[1000] ${
-            isScrollingUp ? 'top-4 right-4' : 'bottom-4 right-4'
+            isScrollingUp ? 'top-16 md:top-4 right-2 md:right-4' : 'bottom-4 right-4'
           } bg-accent text-black p-3 rounded-full shadow-lg`}
           onClick={handleClick}
           initial={{ opacity: 0, scale: 0.8 }}

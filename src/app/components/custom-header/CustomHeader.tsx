@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -9,6 +9,16 @@ import { Home, Phone, Mail, FileText, ContactRound, Download, Rss, Menu, X } fro
 const CustomHeader: React.FC = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
@@ -30,7 +40,7 @@ const CustomHeader: React.FC = () => {
   };
 
   return (
-    <header className="bg-gray-950 rounded-xl rounded-t-none text-white p-4">
+    <header className={`bg-gray-950 rounded-xl rounded-t-none text-white p-4 md:static ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 rounded-none shadow-lg' : ''}`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="md:hidden">
           <button onClick={toggleDrawer} className="text-white">
