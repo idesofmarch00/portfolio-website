@@ -41,8 +41,8 @@ export const CustomFooter: React.FC = () => {
           <div className="flex space-x-4">
             <SocialIcon href="https://github.com/idesofmarch00" icon={<Github />} label="GitHub" />
             <SocialIcon href="https://www.linkedin.com/in/sahilahmed" icon={<Linkedin />} label="LinkedIn" />
-            <SocialIcon href="tel:+1234567890" icon={<Phone />} label="Phone" />
-            <SocialIcon href="mailto:sahil@example.com" icon={<Mail />} label="Email" />
+            <SocialIcon href="tel:+919354341318" icon={<Phone />} label="Phone" />
+            <SocialIcon href="mailto:sa.idesofmarch@gmail.com" icon={<Mail />} label="Email" />
           </div>
         </div>
       </div>
