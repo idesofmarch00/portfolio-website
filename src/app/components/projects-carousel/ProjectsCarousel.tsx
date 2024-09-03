@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "../ui/apple-cards-carousel";
@@ -9,7 +8,7 @@ export default function ProjectsCarousel() {
   ));
  
   return (
-    <div className="w-full h-full -mt-64">
+    <div className="w-96 h-full mt-2 sm:-mt-32 md:-mt-64">
       <Carousel items={cards} />
     </div>
   );
@@ -22,9 +21,9 @@ const DummyContent = () => {
         return (
           <div
             key={"dummy-content" + index}
-            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+            className="bg-[#F5F5F7] p-4 sm:p-6 md:p-8 lg:p-14 rounded-3xl mb-4"
           >
-            <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+            <p className="text-neutral-600 text-sm sm:text-base md:text-lg lg:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700">
                 The first rule of Apple club is that you boast about Apple club.
               </span>{" "}
@@ -38,7 +37,7 @@ const DummyContent = () => {
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+              className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto mx-auto object-contain mt-4"
             />
           </div>
         );
