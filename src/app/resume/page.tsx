@@ -217,7 +217,7 @@ export default function Resume() {
                               <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd" />
                             </svg>
                           </div>
-              <span className="ml-2 text-sm font-mono">resume.{isJsonMode ? 'json' : 'html'}</span>
+              <span className="invisible sm:visible ml-2 text-sm font-mono">resume.{isJsonMode ? 'json' : 'html'}</span>
              <div className='absolute right-4 flex items-center space-x-4'> <button
                 onClick={toggleMode}
                 className="ml-auto bg-gray-600 text-white px-2 py-1 rounded text-xs place-self-end"
