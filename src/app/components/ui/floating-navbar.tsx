@@ -98,7 +98,7 @@ export const FloatingNav = ({
         
         <div className="flex items-center space-x-3">
           <motion.a
-            href="tel:+11234567890"
+            href="tel:+919354341318"
             className="text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -106,7 +106,7 @@ export const FloatingNav = ({
             <Phone className="h-5 w-5" />
           </motion.a>
           <motion.a
-            href="mailto:dummy@gmail.com"
+            href="mailto:sa.idesofmarch@gmail.com"
             className="text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
