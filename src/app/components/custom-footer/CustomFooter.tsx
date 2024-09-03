@@ -7,7 +7,7 @@ import { cn } from '../../lib/utils';
 
 export const CustomFooter: React.FC = () => {
   return (
-    <footer className="bg-gray-950 text-white pt-4 rounded-b-none rounded-xl  pb-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gray-900 md:bg-gray-950 text-white pt-10 md:pt-4 rounded-b-none rounded-xl  pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <Link href="https://www.linkedin.com/in/sahil-ahmed-/" className="text-xl mb-4 md:mb-0">

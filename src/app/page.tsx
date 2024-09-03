@@ -9,6 +9,7 @@ import  DP  from "./components/dp/DP";
 import Projects from "./components/projects";
 import Button from "./components/button"
 import ProjectsCarousel from "./components/projects-carousel";
+import SmallGlowingCard from './components/small-glowing-card';
 import Blogs from "./components/blogs";
 import Socials from "./components/socials";
 import Skills from "./components/skills";
@@ -17,6 +18,8 @@ import Experience from "./components/experience";
 import ComputersCanvas from "./components/ui/computers";
 import ScrollButton from "./components/scroll-button";
 import PageTransition from "./components/PageTransition";
+import { LinkPreview } from "./components/ui/link-preview";
+import { ArrowRight } from 'lucide-react'; 
 
 export default function Home() {
   return (
@@ -101,6 +104,39 @@ export default function Home() {
       {/* BLOGS SECTION */}
       <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
       <Blogs/>
+      <div className="md:hidden w-screen mb-10">
+<SmallGlowingCard
+  title="Globalize Your Vue.js App"
+  description="Explore steps to integrate internationalization and local Indian languages into your Vue.js application."
+  linkUrl="https://sahilahmed.hashnode.dev/how-to-globalize-your-vuejs-app-with-i18n-a-step-by-step-guide"
+  imageUrl="https://cdn.hashnode.com/res/hashnode/image/upload/v1724934196930/bde74906-a8ad-475d-a53e-9f50bb711458.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  imageAlt="Globalization in Vue.js"
+  gradientColors="from-pink-600 to-pink-800"
+/>
+
+<SmallGlowingCard
+  title="Firebase Cloud Messaging"
+  description="Implementing Firebase Cloud Messaging in a React iOS/Android PWA."
+  linkUrl="https://sahilahmed.hashnode.dev/implementing-firebase-cloud-messaging-in-a-react-ios-android-pwa-a-comprehensive-guide"
+  imageUrl="https://cdn.hashnode.com/res/hashnode/image/upload/v1725049939952/4e71c86c-0b5b-4ef3-9815-2e8a72fcbf47.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  imageAlt="Firebase Cloud Messaging"
+  gradientColors="from-neutral-600 to-neutral-800"
+/>
+
+<SmallGlowingCard
+  title="React Native IDE in VS Code"
+  description="Discover how this IDE simplifies mobile app development for iOS and Android, offering powerful tools for efficiency and productivity."
+  linkUrl="https://sahilahmed.hashnode.dev/my-experience-using-the-react-native-ide-in-vs-code"
+  imageUrl="https://cdn.hashnode.com/res/hashnode/image/upload/v1724961136689/17dcaa1b-3dd2-4341-8901-19ac088bbe56.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  imageAlt="React Native IDE in VS Code"
+  gradientColors="from-blue-700 to-blue-900"
+/>
+<LinkPreview url=" https://sahilahmed.hashnode.dev/"><div className="relative flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-white hover:from-white hover:via-blue-500 hover:to-purple-500 transition-colors duration-300 cursor-pointer group">
+  <span>Read All Posts</span>
+  <ArrowRight size={20} color="white" />
+  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 via-blue-500 to-white transition-all duration-300 group-hover:w-[30%]"></span>
+</div></LinkPreview>
+</div>
     </main>
     </PageTransition>
   );
