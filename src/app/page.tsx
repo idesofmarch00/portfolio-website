@@ -83,14 +83,13 @@ export default function Home() {
       <br id="projects" />
 
       {/* PROJECTS SECTION */}
+      {/* desktop */}
      <div className="hidden md:flex md:flex-col md:w-full"> <Spotlight/>
       <Projects/></div>
-
+      {/* mobile */}
       <div className="md:hidden w-96 -mt-10"> <SpotlightSmall/>
        <ProjectsCarousel/></div>
 
-      <br />
-      <br />
       <br id="experience" />
 
       {/* EXPERIENCE EDUCATION SECTION */}
