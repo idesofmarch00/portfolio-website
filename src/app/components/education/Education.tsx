@@ -13,7 +13,7 @@ export default function Education() {
   <div>
   <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
          Software Engineer at {" "}<LinkPreview url="https://www.fuelbuddy.in/" className="font-bold">
-          FuelBuddy
+         <strong><u>FuelBuddy</u></strong>
         </LinkPreview>
         <br /> Gurugram, India.
        </p>
@@ -67,14 +67,14 @@ export default function Education() {
           <div>
           <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
          Software Engineer at {" "}<LinkPreview url="https://www.bing.com/search?q=fuelbuddy&cvid=d57f070018204d5a953ac1f6662648b5&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQRRg8MgYICBBFGEHSAQgyNDg0ajBqNKgCCLACAQ&FORM=ANAB01&PC=U531/" className="font-bold">
-          FuelBuddy
+          <strong><u>FuelBuddy</u></strong>
         </LinkPreview>
         <br /> Gurugram, India.
        </p>
         <ul className="list-disc list-inside text-neutral-200 font-normal pb-4 flex flex-col space-y-2">
-          <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging Vue.js, Pinia,Tailwind CSS and GraphQL for delivery partners and operations team called the <strong><LinkPreview url="https://play.google.com/store/apps/details?id=in.fuelbuddy.driver&hl=en" className="font-bold">
-          Driver App
-        </LinkPreview></strong>. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
+          <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging Vue.js, Pinia,Tailwind CSS and GraphQL for delivery partners and operations team called the <LinkPreview url="https://play.google.com/store/apps/details?id=in.fuelbuddy.driver&hl=en" className="font-bold">
+          <strong><u>Driver App</u></strong> .
+        </LinkPreview>This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
           <li>Integrated Mapbox and UI libraries for designing intuitive location tracking and order visualization views, reducing average delivery times by 50 minutes per order.</li>
           <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams, resulting in a 32% increase in dispensing accuracy.</li>
         </ul>

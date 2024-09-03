@@ -97,7 +97,7 @@ export const InfiniteMovingCards = ({
         >
           <Image 
             src={item.url} 
-            alt={item.name} 
+            alt={item.name + ' logo'} 
             width={50} 
             height={50} 
             className="transition-opacity duration-300 group-hover:opacity-0"

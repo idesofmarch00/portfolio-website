@@ -78,6 +78,7 @@ const CustomHeader: React.FC = () => {
         <div className="flex items-center space-x-3 md:space-x-4">
           <motion.a
             href="tel:+919354341318"
+            aria-label="phone"
             className="text-white hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
