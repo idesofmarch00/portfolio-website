@@ -86,6 +86,7 @@ const CustomHeader: React.FC = () => {
             <Phone className="h-6 w-6" />
           </motion.a>
           <motion.a
+            aria-label='mail'
             href="mailto:sa.idesofmarch@gmail.com"
             className="text-white hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
@@ -94,6 +95,7 @@ const CustomHeader: React.FC = () => {
             <Mail className="h-6 w-6" />
           </motion.a>
           <motion.a
+            aria-label='resume'
             href="/resume.pdf"
             download="Sahil_Ahmed_Resume.pdf"
             className="relative inline-flex items-center px-2 md:px-4 py-2 rounded-md text-white font-semibold overflow-hidden"
