@@ -22,9 +22,10 @@ const CustomHeader: React.FC = () => {
 
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
+    { path: '/resume', icon: FileText, label: 'Resume' },
     { path: '/contact', icon: ContactRound, label: 'Contact' },
     { label: 'Blog', icon: Rss, path: 'https://sahilahmed.hashnode.dev/' },
-    { path: '/resume', icon: FileText, label: 'Resume' },
+   
   ];
 
   const toggleDrawer = () => setIsOpen(!isOpen);
