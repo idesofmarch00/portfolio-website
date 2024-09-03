@@ -24,11 +24,39 @@ export default function Home() {
       <ScrollButton/>
 
       {/* HERO SECTION */}
-      <div className="flex justify-between items-start px-10 space-x-4 pt-4 bg-black">
-      <div className="flex flex-col w-1/2"><DP/><Socials/></div>
-      <div className="flex flex-col space-y-0"><Name/><Designation/><Intro/><div className="flex items-center justify-center space-x-6"><Button text="Experience" href="#experience" />
-      <Button text="Projects" href="#projects" /></div></div>
-      </div>
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start px-4 md:px-10 space-y-4 md:space-y-0 md:space-x-4 pt-4 bg-black">
+  <div className="md:hidden -mb-6 md:mb-0 flex flex-col items-center space-y-2">
+    <Name />
+    <Designation />
+  </div>
+  
+  <div className="md:hidden">
+    <Socials />
+  </div>
+  
+  <div className="flex flex-col items-center md:items-start md:w-2/5">
+    <DP />
+    <div className="hidden md:block mt-4">
+      <Socials />
+    </div>
+  </div>
+  
+  <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 md:w-3/5">
+    <div className="hidden md:block">
+      <Name />
+      <Designation />
+    </div>
+    
+    <div className="text-center md:text-left w-full">
+      <Intro />
+    </div>
+    
+    <div className="flex flex-row items-center justify-center md:justify-start space-x-4 pt-28 md:pt-0 mt-4">
+      <Button text="Experience" href="#experience" />
+      <Button text="Projects" href="#projects" />
+    </div>
+  </div>
+</div>
 
       <br />
 
