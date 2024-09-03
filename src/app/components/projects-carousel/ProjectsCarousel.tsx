@@ -1,74 +1,118 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "../ui/apple-cards-carousel";
+import Link from "next/link";
 
 export default function ProjectsCarousel() {
-  const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} layout={true} />
+  const cards = projects.map((project, index) => (
+    <Card key={project.title} card={project} index={index} layout={true} />
   ));
- 
+
   return (
     <div className="w-96 h-full mt-2 sm:-mt-32 md:-mt-64">
       <Carousel items={cards} />
     </div>
   );
 }
- 
-const DummyContent = () => {
+
+interface Project {
+  category: string;
+  title: string;
+  src: string;
+  description: string;
+  code?: string;
+  link?: string;
+}
+
+const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] p-4 sm:p-6 md:p-8 lg:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 text-sm sm:text-base md:text-lg lg:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto mx-auto object-contain mt-4"
-            />
-          </div>
-        );
-      })}
-    </>
+    <div className="bg-[#F5F5F7] p-4 sm:p-6 md:p-8 lg:p-14 rounded-3xl mb-4">
+      <Image
+        src={project.src}
+        alt={project.title}
+        height={500}
+        width={500}
+        className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto mx-auto object-contain mt-4 mb-4"
+      />
+     <div
+        className="text-neutral-600 text-sm sm:text-base md:text-lg lg:text-xl font-sans max-w-3xl mx-auto mb-6"
+        dangerouslySetInnerHTML={{ __html: project.description }}
+      />
+      <div className="flex justify-center space-x-4">
+        {project.code && (
+          <Link href={project.code} target="_blank" rel="noopener noreferrer">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded">View Code</button>
+          </Link>
+        )}
+        {project.link && (
+          <Link href={project.link} target="_blank" rel="noopener noreferrer">
+            <button className="bg-green-500 text-white px-4 py-2 rounded">Visit Site</button>
+          </Link>
+        )}
+        {!project.link && !project.code && (
+          <button className=" text-black font-bold
+           px-4 py-2 rounded">
+            Coming Soon ...
+          </button>
+        )}
+      </div>
+    </div>
   );
 };
- 
-const data = [
+
+const data: Project[] = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Typing",
+    title: "Type Best Prompt",
+    src: "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
+    description: "A multiplayer typing test competition to improve your typing speed and accuracy to craft the best prompt for LLMs.",
+  },
+  {
+    category: "Communication",
+    title: "Snip Chat",
+    src: "/images/chat-app/snip-chat.png",
+    description: "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>",
+    code: "https://github.com/idesofmarch00/snip-chat",
+    link: "https://snip-chat.netlify.app",
   },
   {
     category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    title: "SwissArmyKnife NewTab",
+    src: "/images/extension/chrome-extension.png",
+    description: "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>",
+    code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
+    link: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
+  },
+];
+
+interface ProjectWithContent extends Project {
+  content: React.ReactNode;
+}
+
+const projects: ProjectWithContent[] = [
+  {
+    category: "Typing",
+    title: "Type Best Prompt",
+    src: "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
+    content: <ProjectContent project={data[0]} />,
+    description: "A typing test application to improve your typing speed and accuracy.",
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Communication",
+    title: "Snip Chat",
+    src: "/images/chat-app/snip-chat.png",
+    content: <ProjectContent project={data[1]} />,
+    description: "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>",
+    code: "https://github.com/idesofmarch00/snip-chat",
+    link: "https://snip-chat.netlify.app",
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
+    category: "Productivity",
+    title: "SwissArmyKnife NewTab",
+    src: "/images/extension/chrome-extension.png",
+    content: <ProjectContent project={data[2]} />,
+    description: "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>",
+    code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
+    link: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
   },
 ];
