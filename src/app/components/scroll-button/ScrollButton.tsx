@@ -49,7 +49,7 @@ const ScrollButton: React.FC = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          className={`fixed z-[1000] ${
+          className={`fixed z-20 md:z-[100] ${
             isScrollingUp ? 'top-16 md:top-4 right-2 md:right-4' : 'bottom-4 right-4'
           } bg-accent text-black p-3 rounded-full shadow-lg`}
           onClick={handleClick}
