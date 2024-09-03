@@ -9,7 +9,7 @@ export default function GlareCardDemo() {
           width={256}
           height={256}
           alt="Sahil Ahmed Profile Pic"
-          src="/sahil.jpeg"
+          src="/sahil.webp"
         />
     </GlareCard>
   );
