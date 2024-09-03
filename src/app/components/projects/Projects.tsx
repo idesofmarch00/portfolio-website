@@ -5,7 +5,7 @@ import { Url } from "url";
 
 const ColorfulLink = () => {
   return (
-    <Link href="https://github.com/idesofmarch00" passHref className="relative pt-4 mx-auto">
+    <Link href="https://github.com/idesofmarch00" passHref className="relative mx-auto">
       <div className="flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 cursor-pointer group">
         <span>View All My Projects</span>
         <ArrowRight size={20} color="white" /> 

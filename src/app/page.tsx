@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <PageTransition>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 z-50"
+        className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-yellow-500 via-red-500 to-green-500 z-50"
         style={{ scaleX: scrollYProgress }}
       />
     <main className="flex min-h-screen flex-col items-center justify-between bg-black px-32">
@@ -40,28 +40,23 @@ export default function Home() {
     <Name />
     <Designation />
   </div>
-  
   <div className="md:hidden">
     <Socials />
   </div>
-  
   <div className="flex flex-col items-center md:items-start md:w-2/5">
     <DP />
     <div className="hidden md:block mt-4">
       <Socials />
     </div>
   </div>
-  
   <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-0 md:w-3/5">
     <div className="hidden md:block">
       <Name />
       <Designation />
     </div>
-    
     <div className="text-center md:text-left w-full">
       <Intro />
     </div>
-    
     <div className="flex flex-row w-full items-center justify-center space-x-4 pt-28 md:pt-0 mt-4 md:mt-0">
       <Button text="Experience" href="#experience" />
       <Button text="Projects" href="#projects" />
@@ -105,12 +100,9 @@ export default function Home() {
       {/* EXPERIENCE EDUCATION SECTION */}
       <Education/>
 
-      <br />
-
       {/* BLOGS SECTION */}
-      <TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/>
-      <Blogs/>
-      <div className="md:hidden w-screen mb-10">
+      <div className="-mt-12 md:mt-0 w-fit flex flex-col"> <div className="pl-4 md:pl-0"><TextReveal visible="My Technical Blog" revealed="Read my newsletter!"/></div><Blogs/>
+      <div className="md:hidden w-screen mb-10 px-2">
 <SmallGlowingCard
   title="Globalize Your Vue.js App"
   description="Explore steps to integrate internationalization and local Indian languages into your Vue.js application."
@@ -137,12 +129,12 @@ export default function Home() {
   imageAlt="React Native IDE in VS Code"
   gradientColors="from-blue-700 to-blue-900"
 />
-<LinkPreview url=" https://sahilahmed.hashnode.dev/"><div className="relative flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-white hover:from-white hover:via-blue-500 hover:to-purple-500 transition-colors duration-300 cursor-pointer group">
+<LinkPreview url=" https://sahilahmed.hashnode.dev/"><div className="relative flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-white hover:from-white hover:via-blue-500 hover:to-purple-500 transition-colors duration-300 cursor-pointer group pl-2">
   <span>Read All Posts</span>
   <ArrowRight size={20} color="white" />
   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 via-blue-500 to-white transition-all duration-300 group-hover:w-[30%]"></span>
 </div></LinkPreview>
-</div>
+</div></div>
     </main>
     </PageTransition>
   );

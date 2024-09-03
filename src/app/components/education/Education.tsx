@@ -180,7 +180,7 @@ export default function Education() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-96 md:w-full">
       <Timeline data={data} >
       <TextReveal visible="My Work Experience" revealed="My Education"/>
       </Timeline>
