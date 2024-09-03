@@ -77,7 +77,7 @@ const CustomHeader: React.FC = () => {
         </nav>
         <div className="flex items-center space-x-3 md:space-x-4">
           <motion.a
-            href="tel:+11234567890"
+            href="tel:+919354341318"
             className="text-white hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -85,7 +85,7 @@ const CustomHeader: React.FC = () => {
             <Phone className="h-6 w-6" />
           </motion.a>
           <motion.a
-            href="mailto:dummy@gmail.com"
+            href="mailto:sa.idesofmarch@gmail.com"
             className="text-white hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
