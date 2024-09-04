@@ -34,7 +34,7 @@ const CustomCursor: React.FC = () => {
   }, [onMouseMove]);
 
   return (
-    <div ref={cursorRef} className="fixed top-0 left-0 z-50 pointer-events-none">
+    <div ref={cursorRef} className="hidden lg:block fixed top-0 left-0 z-50 pointer-events-none">
       <svg width="80" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="lightGradient" cx="0" cy="0" r="100%" gradientUnits="userSpaceOnUse">
