@@ -44,7 +44,7 @@ const CustomHeader: React.FC = () => {
     <header className={`bg-gray-900 md:bg-gray-950 rounded-xl rounded-t-none text-white p-4 md:static ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 rounded-none shadow-lg' : ''}`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="md:hidden">
-          <button onClick={toggleDrawer} className="text-white">
+          <button aria-label='menu' onClick={toggleDrawer} className="text-white">
             <Menu className="h-6 w-6" />
           </button>
         </div>

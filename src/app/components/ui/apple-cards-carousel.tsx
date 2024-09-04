@@ -149,7 +149,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         <div className="!z-0 flex justify-between pl-5 pr-2 mt-2">
 
           <ColorfulLink/>
-          <div className="flex items-center gap-2"><button
+          <div className="flex items-center gap-2"><button aria-label="previous"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
@@ -157,6 +157,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
+          aria-label="next"
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}

@@ -24,7 +24,7 @@ const SmallGlowingCard: React.FC<SmallGlowingCardProps> = ({
       <div className="absolute inset-0 bg-gradient-to-r animate-gradient-x" style={{ backgroundSize: '200% 200%' }}></div>
       <div className="relative z-10 flex">
         <div className="flex-1 pr-4">
-          <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
+          <h1 className="text-lg font-semibold text-white mb-2">{title}</h1>
           <p className="text-sm text-gray-200 mb-4">{description}</p>
           <a
             href={linkUrl}
