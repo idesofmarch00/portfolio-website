@@ -21,12 +21,14 @@ import PageTransition from "./components/PageTransition";
 import { LinkPreview } from "./components/ui/link-preview";
 import { ArrowRight } from 'lucide-react'; 
 import { motion, useScroll } from "framer-motion";
+import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
     <PageTransition>
+      <CustomCursor/>
       <motion.div
         className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-yellow-500 via-red-500 to-green-500 z-50"
         style={{ scaleX: scrollYProgress }}
