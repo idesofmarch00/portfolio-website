@@ -65,7 +65,7 @@ const data: Project[] = [
     category: "Typing",
     title: "Type Best Prompt",
     src: "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
-    description: "A multiplayer typing test competition to improve your typing speed and accuracy to craft the best prompt for LLMs.",
+    description: "A full-stack web app which is a multiplayer typing test competition to improve your typing speed and accuracy to craft the best prompt for LLMs.Built using the MERN stack.",
   },
   {
     category: "Communication",
@@ -95,7 +95,7 @@ const projects: ProjectWithContent[] = [
     title: "Type Best Prompt",
     src: "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
     content: <ProjectContent project={data[0]} />,
-    description: "A typing test application to improve your typing speed and accuracy.",
+    description: "A full-stack web app which is a multiplayer typing test competition to improve your typing speed and accuracy to craft the best prompt for LLMs.Built using the MERN stack.",
   },
   {
     category: "Communication",
