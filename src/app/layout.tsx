@@ -5,6 +5,7 @@ import  FloatingNavHeader  from "./components/floating-nav-header";
 import CustomHeader from "./components/custom-header";
 import CustomFooter from "./components/custom-footer";
 import AnimatedLayout from "./components/AnimatedLayout";
+import CustomCursor from "./components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <head><link rel="icon" href="/favicon.ico" sizes="any" /></head>
       <body className={inter.className} style={{backgroundColor:'black'}}>
-      <AnimatedLayout><CustomHeader/><FloatingNavHeader/>{children}<CustomFooter/></AnimatedLayout></body>
+      <AnimatedLayout> 
+      <CustomCursor/>
+        <CustomHeader/><FloatingNavHeader/>{children}<CustomFooter/></AnimatedLayout></body>
     </html>
   );
 }
