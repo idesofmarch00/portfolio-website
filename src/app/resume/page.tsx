@@ -26,7 +26,7 @@ export default function Resume() {
       name: "Sahil Ahmed",
       contact: {
         phone: "+91 9354341318",
-        email: "sa.idesofmarch@gmail.com",
+        email: "sahilahmed.y2k@gmail.com",
         linkedin: "https://linkedin.com/in/sahil-ahmed-",
         github: "https://github.com/idesofmarch00",
         leetcode: "https://leetcode.com/u/NyrOsNjfL3/",
@@ -97,7 +97,7 @@ export default function Resume() {
     <header>
         <h1>Sahil Ahmed</h1>
         <p>Phone: +91 9354341318</p>
-        <p>Email: sa.idesofmarch@gmail.com</p>
+        <p>Email: sahilahmed.y2k@gmail.com</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/sahil-ahmed-">https://linkedin.com/in/sahil-ahmed-</a></p>
         <p>GitHub: <a href="https://github.com/idesofmarch00">https://github.com/idesofmarch00</a></p>
         <p>LeetCode: <a href="https://leetcode.com/u/NyrOsNjfL3/">https://leetcode.com/u/NyrOsNjfL3/</a></p>

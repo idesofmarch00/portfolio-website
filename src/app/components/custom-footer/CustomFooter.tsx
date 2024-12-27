@@ -42,7 +42,7 @@ export const CustomFooter: React.FC = () => {
             <SocialIcon href="https://github.com/idesofmarch00" icon={<Github />} label="GitHub" />
             <SocialIcon href="https://www.linkedin.com/in/sahilahmed" icon={<Linkedin />} label="LinkedIn" />
             <SocialIcon href="tel:+919354341318" icon={<Phone />} label="Phone" />
-            <SocialIcon href="mailto:sa.idesofmarch@gmail.com" icon={<Mail />} label="Email" />
+            <SocialIcon href="mailto:sahilahmed.y2k@gmail.com" icon={<Mail />} label="Email" />
           </div>
         </div>
       </div>

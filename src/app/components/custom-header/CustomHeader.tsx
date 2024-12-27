@@ -87,7 +87,7 @@ const CustomHeader: React.FC = () => {
           </motion.a>
           <motion.a
             aria-label='mail'
-            href="mailto:sa.idesofmarch@gmail.com"
+            href="mailto:sahilahmed.y2k@gmail.com"
             className="text-white hover:text-blue-300 transition duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
