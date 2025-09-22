@@ -66,7 +66,7 @@ export function FocusCards({ cards }: { cards: CardType[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full -mt-60">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-10 max-w-8xl mx-auto md:px-8 w-full -mt-80">
       {cards.map((card, index) => (
         card.active ? (
           <AnimatedModal key={card.title} data={card}>

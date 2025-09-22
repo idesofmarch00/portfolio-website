@@ -69,6 +69,24 @@ export default function Home() {
       {/* SKILLS SECTION */}
       <TextReveal visible="My Skills and Tech Stack" revealed=""/>
       <Skills/>
+
+      
+
+      <br id="projects" />
+      <br id="projects" />
+      <br id="projects" />
+      <br id="projects" />
+
+
+      {/* PROJECTS SECTION */}
+      {/* desktop */}
+     <div className="hidden md:flex md:flex-col md:w-full"> <Spotlight/>
+      <Projects/></div>
+      {/* mobile */}
+      <div className="md:hidden w-96 -mt-10"> <SpotlightSmall/>
+       <ProjectsCarousel/></div>
+
+
       {/* desktop */}
       <div className="hidden md:flex items-center justify-between"><Tools />
       <div className="text-white pl-24 h-96 -mt-20">
@@ -84,16 +102,6 @@ export default function Home() {
       <div className="w-96 -mt-10"><ComputersCanvas /></div>
       </div>
       </div>
-
-      <br id="projects" />
-
-      {/* PROJECTS SECTION */}
-      {/* desktop */}
-     <div className="hidden md:flex md:flex-col md:w-full"> <Spotlight/>
-      <Projects/></div>
-      {/* mobile */}
-      <div className="md:hidden w-96 -mt-10"> <SpotlightSmall/>
-       <ProjectsCarousel/></div>
 
       <br id="experience" />
 

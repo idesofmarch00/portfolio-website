@@ -28,6 +28,25 @@ export type Card = {
 export default function Projects() {
   const cards : Card[] = [
     {
+      title: "SideKick:Ride Electric",
+      active: true,
+      images : ["/images/sidekick/sidekick1.webp",
+        "/images/sidekick/sidekick2.webp",
+        "/images/sidekick/sidekick3.webp",
+        "/images/sidekick/sidekick4.png",
+        "/images/sidekick/sidekick5.png"
+      ],
+      code:"",
+      description: `<ul><li>A React Native app which is your ultimate urban mobility companion, offering convenient e-scooter rentals that get you where you need to go quickly, affordably, and sustainably.</li>
+<li>Our streamlined rental process makes it easy to hop on and ride:</li>
+<li>Simply scan the QR code on any SideKick scooter or manually enter the scooter number</li>
+<li>Unlock instantly and start your journey</li></ul>`,
+      link: "https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521",
+      // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
+      src : "/images/sidekick/sidekick.webp",
+      // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
+    },
+    {
       title: "Type Best Prompt",
       active: false,
       images : [],
