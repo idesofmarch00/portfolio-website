@@ -17,7 +17,7 @@ export default function Education() {
           <div>
             <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
               Sr. Frontend Engineer at {" "}
-              <LinkPreview url="https://myfuels.in/" className="font-bold">
+              <LinkPreview url="https://play.google.com/store/apps/details?id=in.myfuels.customerapp&pcampaignid=web_share" className="font-bold">
                 <strong><u>MyFuels</u></strong>
               </LinkPreview>
               <br /> Gurugram, India.
@@ -70,7 +70,7 @@ export default function Education() {
           <div>
             <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
               Software Engineer at {" "}
-              <LinkPreview url="https://www.fuelbuddy.in/" className="font-bold">
+              <LinkPreview url="https://play.google.com/store/apps/developer?id=Treis+Solutions+LLP&hl=en_IN" className="font-bold">
                 <strong><u>FuelBuddy</u></strong>
               </LinkPreview>
               <br /> Gurugram, India.
