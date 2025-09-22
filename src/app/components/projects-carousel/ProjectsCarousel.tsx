@@ -39,7 +39,7 @@ const ProjectContent: React.FC<{ project: Project }> = ({ project }) => {
         dangerouslySetInnerHTML={{ __html: project.description }}
       />
       <div className="flex justify-center space-x-4">
-        {project.code && (
+        {project.code && project.code.length > 0 && (
           <Link href={project.code} target="_blank" rel="noopener noreferrer">
             <button className="bg-blue-500 text-white px-4 py-2 rounded">View Code</button>
           </Link>

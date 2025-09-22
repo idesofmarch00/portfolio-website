@@ -82,12 +82,12 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
             </div>
           </ModalContent>
           <ModalFooter className="gap-4 -mt-4 bg-neutral-900">
-          <Link
+          {data.code && <Link
   href={data.code as Url}
   className="p-3 bg-blue-500 text-white !h-9 border border-blue-700 rounded-md text-xs w-24 text-center hover:bg-blue-600 hover:border-blue-800 transition-colors duration-300"
 >
   View Code
-</Link>
+</Link>}
 <Link
   href={data.link as Url}
   className="!h-9 relative inline-block px-4 py-2 text-sm text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 group"
