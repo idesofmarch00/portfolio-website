@@ -66,11 +66,24 @@ const data: Project[] = [
     title: "SideKick:Ride Electric",
     src: "/images/sidekick/sidekick.webp",
     code:"",
-    description: `A React Native app which is your ultimate urban mobility companion, offering convenient e-scooter rentals that get you where you need to go quickly, affordably, and sustainably.
-Our streamlined rental process makes it easy to hop on and ride:
-Simply scan the QR code on any SideKick scooter or manually enter the scooter number
-Unlock instantly and start your journey`,
+    description: `<ul><li>A React Native app which is your ultimate urban mobility companion, offering convenient e-scooter rentals that get you where you need to go quickly, affordably, and sustainably.</li>
+<li>Our streamlined rental process makes it easy to hop on and ride:</li>
+<li>Simply scan the QR code on any SideKick scooter or manually enter the scooter number</li>
+<li>Unlock instantly and start your journey</li></ul>`,
     link: "https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521 ",
+  },
+  {
+    category: "Education",
+    title: "Madrasa App",
+    src: "/images/madarsa/madarsa.png",
+    description: `<ul><li>A React Native app which provides comprehensive Islamic tools and spiritual resources inlcuding:</li>
+<li>99 names of allah with audio</li>
+<li>Tasbih(digital prayer beads) with duas</li>
+<li>Quran with surahs , juzz , hadiths and settings to change reciter and toggle transliteration</li>
+<li>Prayer times with location based settings</li>
+<li>Islamic calendar with hijri and gregorian dates</li>
+<li>Qiblah compass based on location</li></ul>`,
+    link: "https://www.madrasaapp.com/",
   },
   {
     category: "Typing",
@@ -109,6 +122,21 @@ Our streamlined rental process makes it easy to hop on and ride:
 Simply scan the QR code on any SideKick scooter or manually enter the scooter number
 Unlock instantly and start your journey`,
 content: <ProjectContent project={data[0]} />,
+link:"https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521",
+},
+  {
+    category: "Education",
+    title: "Madrasa App",
+    src: "/images/madarsa/madarsa/png",
+    description: `<ul><li>A React Native app which provides comprehensive Islamic tools and spiritual resources inlcuding:</li>
+<li>99 names of allah with audio</li>
+<li>Tasbih(digital prayer beads) with duas</li>
+<li>Quran with surahs , juzz , hadiths and settings to change reciter and toggle transliteration</li>
+<li>Prayer times with location based settings</li>
+<li>Islamic calendar with hijri and gregorian dates</li>
+<li>Qiblah compass based on location</li></ul>`,
+content: <ProjectContent project={data[1]} />,
+link:"https://www.madrasaapp.com/",
 },
   {
     category: "Typing",

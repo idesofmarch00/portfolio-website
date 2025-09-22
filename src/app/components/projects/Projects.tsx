@@ -47,6 +47,29 @@ export default function Projects() {
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
+      title: "Madrasa App",
+      active: true,
+      images : ["/images/madarsa/madarsa1.png",
+        "/images/madarsa/madarsa2.png",
+        "/images/madarsa/madarsa3.png",
+        "/images/madarsa/madarsa4.png",
+        "/images/madarsa/madarsa5.png",
+        "/images/madarsa/madarsa6.png"
+      ],
+      code:"",
+      description: `<ul><li>A React Native app which provides comprehensive Islamic tools and spiritual resources including:</li>
+<li>1. 99 names of allah with audio.</li>
+<li>2. Tasbih(digital prayer beads) with duas.</li>
+<li>3. Quran with surahs , juzz , hadiths and settings to change reciter and toggle transliteration.</li>
+<li>4. Prayer times with location based settings.</li>
+<li>5. Islamic calendar with hijri and gregorian dates.</li>
+<li>6. Qiblah compass based on location.</li></ul>`,
+      link: "https://www.madrasaapp.com/",
+      // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
+      src : "/images/madarsa/madarsa.png",
+      // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
+    },
+    {
       title: "Type Best Prompt",
       active: false,
       images : [],
