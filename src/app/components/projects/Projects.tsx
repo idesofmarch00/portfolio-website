@@ -64,7 +64,7 @@ export default function Projects() {
 <li>4. Prayer times with location based settings.</li>
 <li>5. Islamic calendar with hijri and gregorian dates.</li>
 <li>6. Qiblah compass based on location.</li></ul>`,
-      link: "https://www.madrasaapp.com/",
+      link: "https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view?usp=sharing",
       // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
       src : "/images/madarsa/madarsa.png",
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",

@@ -83,7 +83,7 @@ const data: Project[] = [
 <li>Prayer times with location based settings</li>
 <li>Islamic calendar with hijri and gregorian dates</li>
 <li>Qiblah compass based on location</li></ul>`,
-    link: "https://www.madrasaapp.com/",
+    link: "https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view?usp=sharing",
   },
   {
     category: "Typing",
@@ -136,7 +136,7 @@ link:"https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521",
 <li>Islamic calendar with hijri and gregorian dates</li>
 <li>Qiblah compass based on location</li></ul>`,
 content: <ProjectContent project={data[1]} />,
-link:"https://www.madrasaapp.com/",
+link:"https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view?usp=sharing",
 },
   {
     category: "Typing",
