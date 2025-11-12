@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 export const BtnList = [
   { name: "Git", iconUrl: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" },
   { name: "Docker", iconUrl: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" },
-  { name: "Google Cloud Platform", iconUrl: "https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-cloud-icon-vector-PNG.png" },
+  { name: "Google Cloud Platform", iconUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwVi6Iv9zNSlRu8OhdHbNecdZk1qWTbJDepw&s" },
   { name: "MongoDB", iconUrl: "https://www.mongodb.com/assets/images/global/favicon.ico" },
   { name: "PWA", iconUrl: "https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png" },
   { name: "WebSockets", iconUrl: "https://socket.io/images/logo-dark.svg" },
-  { name: "LLMs", iconUrl: "https://seeklogo.com/images/M/microsoft-365-copilot-logo-44BA459F18-seeklogo.com.png" },
+  { name: "LLMs", iconUrl: "https://pngdownload.io/wp-content/uploads/2023/12/ChatGPT-Logo-Advanced-Language-Generation-PNG-Transparent-Innovative-Design-jpg.webp" },
   { name: "VS Code", iconUrl: "https://code.visualstudio.com/favicon.ico" },
   { name: "Figma", iconUrl: "https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&q=75&fit=max&auto=format&dpr=2" }
 ];
