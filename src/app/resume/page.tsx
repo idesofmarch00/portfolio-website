@@ -56,7 +56,7 @@ export default function Resume() {
             "Headed the development of multiple mission-critical cross-platform iOS and Android app leveraging Expo React Native, Redux, and GraphQL with a PostgreSQL backend for customers for fuel ordering within an Agile framework.",
             "Implemented multi-language support for local Indian languages in addition to English, increasing success rates for onboarding and expanding the customer base by 55%.",
             "Built pixel-perfect and buttery smooth UI leveraging native APIs leading to 12% increase in user retention rates.",
-            "Integrated payment gateways like Cashfree and Easebuzz, and third-party in-app integrations including Statiq and GlobalAssure for extended service offerings to include EV charging, assistance and other insurance solutions."
+            "Integrated payment gateways like Cashfree and Easebuzz, and third-party in-app integrations including Statiq ,Zoho Support and GlobalAssure for extended service offerings like include EV charging, assistance and insurance solutions."
           ]
         },
         {
