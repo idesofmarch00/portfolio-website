@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { FocusCards } from "../../components/ui/focus-cards";
-import { ArrowRight } from 'lucide-react'; 
+import { ArrowRight } from 'lucide-react';
 import { Url } from "url";
 
 const ColorfulLink = () => {
@@ -8,8 +8,8 @@ const ColorfulLink = () => {
     <Link href="https://github.com/idesofmarch00" passHref className="relative mx-auto">
       <div className="flex items-center space-x-1 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 cursor-pointer group">
         <span>View All My Projects</span>
-        <ArrowRight size={20} color="white" /> 
-      <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-[85%]"></span>
+        <ArrowRight size={20} color="white" />
+        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-[85%]"></span>
       </div>
     </Link>
   );
@@ -20,43 +20,44 @@ export type Card = {
   src: string;
   active: boolean;
   link?: Url | string;
+  link2?: Url | string;
   code?: Url | string;
   description?: string;
   images: string[];
 };
 
 export default function Projects() {
-  const cards : Card[] = [
+  const cards: Card[] = [
     {
       title: "SideKick:Ride Electric",
       active: true,
-      images : ["/images/sidekick/sidekick1.webp",
+      images: ["/images/sidekick/sidekick1.webp",
         "/images/sidekick/sidekick2.webp",
         "/images/sidekick/sidekick3.webp",
         "/images/sidekick/sidekick4.png",
         "/images/sidekick/sidekick5.png"
       ],
-      code:"",
+      code: "",
       description: `<ul><li>A React Native app which is your ultimate urban mobility companion, offering convenient e-scooter rentals that get you where you need to go quickly, affordably, and sustainably.</li>
 <li>Our streamlined rental process makes it easy to hop on and ride:</li>
 <li>Simply scan the QR code on any SideKick scooter or manually enter the scooter number</li>
 <li>Unlock instantly and start your journey</li></ul>`,
-      link: "https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521",
+      link: "https://play.google.com/store/apps/details?id=in.sidekick",
       // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
-      src : "/images/sidekick/sidekick.webp",
+      src: "/images/sidekick/sidekick.webp",
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
       title: "Madrasa App",
       active: true,
-      images : ["/images/madarsa/madarsa1.png",
+      images: ["/images/madarsa/madarsa1.png",
         "/images/madarsa/madarsa2.png",
         "/images/madarsa/madarsa3.png",
         "/images/madarsa/madarsa4.png",
         "/images/madarsa/madarsa5.png",
         "/images/madarsa/madarsa6.png"
       ],
-      code:"",
+      code: "",
       description: `<ul><li>A React Native app which provides comprehensive Islamic tools and spiritual resources including:</li>
 <li>1. 99 names of allah with audio.</li>
 <li>2. Tasbih(digital prayer beads) with duas.</li>
@@ -65,49 +66,50 @@ export default function Projects() {
 <li>5. Islamic calendar with hijri and gregorian dates.</li>
 <li>6. Qiblah compass based on location.</li></ul>`,
       link: "https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view?usp=sharing",
+      link2: "https://madrasaapp.vercel.app/",
       // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
-      src : "/images/madarsa/madarsa.png",
+      src: "/images/madarsa/madarsa.png",
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
       title: "Type Best Prompt",
       active: false,
-      images : [],
+      images: [],
       // src: "https://beebom.com/wp-content/uploads/2021/04/typings-website.jpg",
-      src : "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
+      src: "https://media.geeksforgeeks.org/wp-content/uploads/20210818161259/ex1.png",
       // src: "https://i.dailymail.co.uk/i/pix/2015/12/02/09/2EFB73F300000578-3342394-The_typing_test_screenshot_shown_above_only_takes_a_minute_and_c-a-12_1449049506497.jpg",
     },
     {
       title: "Snip Chat",
-      active : true,
+      active: true,
       code: "https://github.com/idesofmarch00/snip-chat",
       link: "https://snip-chat.netlify.app",
-        images : [
-    "/images/chat-app/splash.png",
-    "/images/chat-app/chat.jpg",
-    "/images/chat-app/users.png",
-    "/images/chat-app/map.jpeg",
-    "/images/chat-app/drawer.png"
-  ],
+      images: [
+        "/images/chat-app/splash.png",
+        "/images/chat-app/chat.jpg",
+        "/images/chat-app/users.png",
+        "/images/chat-app/map.jpeg",
+        "/images/chat-app/drawer.png"
+      ],
       src: "/images/chat-app/snip-chat.png",
-        "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>"
+      "description": "<ul><li>A Progressive Web App (PWA) built with Quasar, Vue.js, Firebase, Mapbox GL JS, and Vite to chat with friends.</li><br/><li>Key features include:</li><ul><li>1. Sending snaps, images, and location information.</li><li>2. Real-time notifications and service workers for enhanced engagement and offline functionality.</li><li>3. A unique feature to discover and add random users nearby.</li></ul></ul>"
     },
     {
       title: "SwissArmyKnife NewTab",
       link: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
       code: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard",
-      active : true,
-      images : [
+      active: true,
+      images: [
         "/images/extension/links.png",
-       "/images/extension/chrome-extension.png",
-       "/images/extension/focus.png",
-       "/images/extension/blocked.png",
-       "/images/extension/settings.png",
+        "/images/extension/chrome-extension.png",
+        "/images/extension/focus.png",
+        "/images/extension/blocked.png",
+        "/images/extension/settings.png",
       ],
       src: "/images/extension/chrome-extension.png",
-        "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>"
-      }
+      "description": "<ul><li>A Chrome extension that replaces your new tab page with a customizable dashboard.</li><br/><li>Designed to boost productivity, it offers features like:</li><ul><li>1. Real-time Bitcoin price and weather updates.</li><li>2. Site blocker, Pomodoro timer, and To-Do list to enhance focus.</li><li>3. Save links to read later functionality.</li></ul></ul>"
+    }
   ];
 
-  return <><FocusCards cards={cards} /><ColorfulLink/></>;
+  return <><FocusCards cards={cards} /><ColorfulLink /></>;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import FlipWords from "../ui/flip-words";
 
 export default function Designation() {
-  const words = ["FrontEnd Engineer","Web Developer","Software Engineer"];
+  const words = ["Sr. FrontEnd Engineer", "App Developer", "Full Stack Engineer", "Software Engineer", "Web Developer", "AI Engineer"];
 
   return (
     <div className="flex justify-center items-center px-4">
