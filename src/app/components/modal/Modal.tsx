@@ -81,20 +81,49 @@ export default function AnimatedModal({children,data}: {children: React.ReactNod
             <DescriptionComponent description={data.description as string} />
             </div>
           </ModalContent>
-          <ModalFooter className="gap-4 -mt-4 bg-neutral-900">
-          {data.code && <Link
-  href={data.code as Url}
-  className="p-3 bg-blue-500 text-white !h-9 border border-blue-700 rounded-md text-xs w-24 text-center hover:bg-blue-600 hover:border-blue-800 transition-colors duration-300"
->
-  View Code
-</Link>}
-<Link
-  href={data.link as Url}
-  className="!h-9 relative inline-block px-4 py-2 text-sm text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 group"
->
-  <span className="relative z-10">Visit Site</span>
-  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
-</Link>
+          <ModalFooter className="gap-4 -mt-4 bg-neutral-900 flex-wrap justify-end">
+            {data.code && (
+              <Link
+                href={data.code as Url}
+                className="p-3 bg-blue-500 text-white !h-9 border border-blue-700 rounded-md text-xs w-24 text-center hover:bg-blue-600 hover:border-blue-800 transition-colors duration-300 flex items-center justify-center"
+              >
+                View Code
+              </Link>
+            )}
+            
+            {/* If the project has both a demo site and an app installation link (like Madrasa App) */}
+            {data.link && data.link2 ? (
+              <>
+                <Link
+                  href={data.link as Url}
+                  className="!h-9 relative inline-flex items-center justify-center px-4 py-2 text-xs md:text-sm text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-indigo-600 hover:to-blue-500 transition-colors duration-300 group"
+                >
+                  <span className="relative z-10">Visit App</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+                <Link
+                  href={data.link2 as Url}
+                  className="!h-9 relative inline-flex items-center justify-center px-4 py-2 text-xs md:text-sm text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 group"
+                >
+                  <span className="relative z-10">Visit Site</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </>
+            ) : (
+              data.link && (
+                <Link
+                  href={data.link as Url}
+                  className="!h-9 relative inline-flex items-center justify-center px-4 py-2 text-xs md:text-sm text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-md border border-transparent text-center hover:bg-gradient-to-r hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 transition-colors duration-300 group"
+                >
+                  <span className="relative z-10">
+                    {data.title.toLowerCase().includes("sidekick") || data.title.toLowerCase().includes("app")
+                      ? "Visit App"
+                      : "Visit Site"}
+                  </span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              )
+            )}
           </ModalFooter>
         </ModalBody>
       </Modal>

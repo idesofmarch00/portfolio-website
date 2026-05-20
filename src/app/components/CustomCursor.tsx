@@ -24,7 +24,8 @@ const CustomCursor: React.FC = () => {
     if (cursorRef.current) {
       const x = cursorX.get();
       const y = cursorY.get();
-      cursorRef.current.style.transform = `translate3d(${x - 10}px, ${y - 10}px, 0)`;
+      // Aligns the tip of the stick (cx=4, cy=4) exactly with the mouse coordinate (x, y)
+      cursorRef.current.style.transform = `translate3d(${x - 4}px, ${y - 4}px, 0)`;
     }
   });
 
@@ -34,26 +35,27 @@ const CustomCursor: React.FC = () => {
   }, [onMouseMove]);
 
   return (
-    <div ref={cursorRef} className="hidden lg:block fixed top-0 left-0 z-50 pointer-events-none">
-      <svg width="80" height="50" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="lightGradient" cx="0" cy="0" r="100%" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
-            <stop offset="50%" stopColor="#C0C0C0" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#FFD700" stopOpacity="0.3" />
-          </radialGradient>
-        </defs>
-        <g transform="rotate(60, 40, 40) translate(0, -5) skew(-10)">
-          {/* Circle of light */}
-          <circle cx="10" cy="10" r="10" fill="url(#lightGradient)" />
-          {/* Wand */}
-          <path 
-            d="M10 10L70 70" 
-            stroke="#FFD700"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </g>
+    <div ref={cursorRef} className="hidden lg:block fixed top-0 left-0 z-[999999] pointer-events-none">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Elegant white stick / wand (angled 45 degrees, sleek and modern) */}
+        <line 
+          x1="4" 
+          y1="4" 
+          x2="28" 
+          y2="28" 
+          stroke="#FFFFFF" 
+          strokeWidth="3" 
+          strokeLinecap="round"
+          style={{ filter: "drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.6))" }}
+        />
+        {/* Glowing white tip at the active hot spot */}
+        <circle 
+          cx="4" 
+          cy="4" 
+          r="3" 
+          fill="#FFFFFF" 
+          style={{ filter: "drop-shadow(0px 0px 6px #FFFFFF)" }}
+        />
       </svg>
     </div>
   );

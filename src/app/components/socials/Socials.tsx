@@ -23,13 +23,13 @@ const people = [
       "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png?20190719232508",
     link: "https://leetcode.com/u/NyrOsNjfL3/",
   },
-  {
-    id: 4,
-    name: "HackerRank",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png",
-    link: "https://www.hackerrank.com/profile/sa_idesofmarch",
-  },
+  // {
+  //   id: 4,
+  //   name: "HackerRank",
+  //   image:
+  //     "https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png",
+  //   link: "https://www.hackerrank.com/profile/sa_idesofmarch",
+  // },
   {
     id: 5,
     name: "Hashnode",
