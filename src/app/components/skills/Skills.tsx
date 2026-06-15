@@ -19,6 +19,8 @@ const t1 = [
   { "id": 13, "name": "Node.js", "url": "https://nodejs.org/static/images/logo.svg" },
   { "id": 14, "name": "Tailwind CSS", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/330px-Tailwind_CSS_Logo.svg.png" },
   { "id": 15, "name": "Express", "url": "https://expressjs.com/images/favicon.png" },
+  { "id": 38, "name": "Swift", "url": "https://cdn.worldvectorlogo.com/logos/swift-15.svg" },
+  { "id": 39, "name": "Kotlin", "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.svg" },
 ]
 const t2 = [{ "id": 16, "name": "Vitest", "url": "https://vitest.dev/logo.svg" },
   { "id": 17, "name": "Playwright", "url": "https://playwright.dev/img/playwright-logo.svg" },
@@ -41,6 +43,7 @@ const t3 = [
   { "id": 33, "name": "PWA", "url": "https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png" },
   { "id": 34, "name": "WebSockets", "url": "https://socket.io/images/logo-dark.svg" },
   { "id": 35, "name": "LLMs", "url": "https://seeklogo.com/images/M/microsoft-365-copilot-logo-44BA459F18-seeklogo.com.png" },
+  { "id": 40, "name": "Agentic Coding", "url": "https://mintlify.s3.us-west-1.amazonaws.com/cursor/logo/dark.svg" },
   { "id": 36, "name": "VS Code", "url": "https://code.visualstudio.com/favicon.ico" },
   { "id": 37, "name": "Figma", "url": "https://cdn.sanity.io/images/599r6htc/regionalized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&q=75&fit=max&auto=format&dpr=2" }
 ];

@@ -11,7 +11,7 @@ import { LinkPreview } from "../ui/link-preview";
 export default function Education() {
   const data = [
     {
-      title: "2024 - present",
+      title: "2025 - present",
       content: (
         <div>
           <div>
@@ -20,13 +20,12 @@ export default function Education() {
               <LinkPreview url="https://play.google.com/store/apps/details?id=in.myfuels.customerapp&pcampaignid=web_share" className="font-bold">
                 <strong><u>MyFuels</u></strong>
               </LinkPreview>
-              <br /> Gurugram, India.
+              <br /> NCR, India / Dubai, UAE
             </p>
             <ul className="list-disc list-inside text-neutral-200 text-xs md:text-sm font-normal mb-8 flex flex-col space-y-2">
-              <li>Headed the development of multiple mission-critical cross-platform iOS and Android app leveraging Expo React Native, Redux, and GraphQL with a PostgreSQL backend for customers for fuel ordering within an Agile framework.</li>
-              <li>Implemented multi-language support for local Indian languages in addition to English, increasing success rates for onboarding and expanding the customer base by 55%.</li>
-              <li>Built pixel-perfect and buttery smooth UI leveraging native APIs leading to 12% increase in user retention rates.</li>
-              <li>Integrated payment gateways like Cashfree and Easebuzz, and third-party in-app integrations including Statiq and GlobalAssure for extended service offerings to include EV charging, assistance and other insurance solutions.</li>
+              <li>Headed the end-to-end development of multiple mission-critical cross-platform iOS and Android apps leveraging Expo React Native, Redux, with a REST/Hasura GraphQL and PostgresSQL backend within an Agile framework for the customers to order fuel.</li>
+              <li>Implemented multi-language support for local Indian languages, increasing success rates for onboarding and expanding the customer base by 55%.</li>
+              <li>Built pixel-perfect, high-performance UI leveraging native APIs and integrated multiple payment gateways (Cashfree, Easebuzz) alongside third-party service offerings (Statiq EV charging, GlobalAssure insurance, Zoho Support), driving a 35% increase in ancillary product adoption and a 18% uplift in average order value through seamless in-app cross-sell flows.</li>
             </ul>
           </div>
           {/* Image gallery for MyFuels screenshots */}
@@ -64,7 +63,7 @@ export default function Education() {
       ),
     },
     {
-      title: "2023-2024",
+      title: "2023 - 2024",
       content: (
         <div>
           <div>
@@ -73,21 +72,20 @@ export default function Education() {
               <LinkPreview url="https://play.google.com/store/apps/developer?id=Treis+Solutions+LLP&hl=en_IN" className="font-bold">
                 <strong><u>FuelBuddy</u></strong>
               </LinkPreview>
-              <br /> Gurugram, India.
+              <br /> NCR, India / Dubai, UAE
             </p>
             <p className="text-neutral-200 text-xs md:text-lg font-bold mb-8">
               Awarded Performer of the Month of September, 2023 for delivering critical business features within tight deadlines.
             </p>
             <ul className="list-disc list-inside text-neutral-200 text-xs md:text-sm font-normal mb-8 flex flex-col space-y-2">
-              <li>Developed scalable and high-performance responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
+              <li>Developed scalable and high-performance and responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, Electron.js and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimised workflow and resulted in a 27% reduction in support tickets and manual interventions.</li>
               <li>Integrated Mapbox for tracking location and vehicle fuel metrics on our dashboard. This streamlined delivery routes, reducing average delivery times by 50 minutes per order.</li>
-              <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE and all over India using WebSockets, which increased dispensing accuracy by 32%.</li>
-              <li>Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month.</li>
-              <li>While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation.</li>
+              <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE using WebSockets, which increased dispensing accuracy by 32%.</li>
+              <li>Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month. While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation.</li>
             </ul>
           </div>
           {/* Image gallery for FuelBuddy screenshots */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <Image
               src="/images/fuelbuddy/native1.png"
               alt="FuelBuddy native app interface"
@@ -116,49 +114,9 @@ export default function Education() {
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "2022-2023",
-      content: (
-        <div>
-          <div>
-            <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
-              Software Engineer at {" "}
-              <LinkPreview url="https://www.fuelbuddy.in/" className="font-bold">
-                <strong><u>FuelBuddy</u></strong>
-              </LinkPreview>
-              <br /> Gurugram, India.
-            </p>
-            <ul className="list-disc list-inside text-neutral-200 font-normal pb-4 flex flex-col space-y-2">
-              <li>Developed mission-critical, scalable, high-performance Progressive Web Apps (PWA) leveraging Vue.js, Pinia, Tailwind CSS and GraphQL for delivery partners and operations team called the <LinkPreview url="https://play.google.com/store/apps/details?id=in.fuelbuddy.driver&hl=en" className="font-bold">
-                <strong><u>Driver App</u></strong>
-              </LinkPreview>. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
-              <li>Integrated Mapbox and UI libraries for designing intuitive location tracking and order visualization views, reducing average delivery times by 50 minutes per order.</li>
-              <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams, resulting in a 32% increase in dispensing accuracy.</li>
-            </ul>
-          </div>
-          {/* Image gallery for FuelBuddy driver app */}
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/images/fuelbuddy/login.png"
-              alt="FuelBuddy driver login"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
             <Image
               src="/images/fuelbuddy/map.png"
               alt="FuelBuddy map integration"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/images/fuelbuddy/logout.png"
-              alt="FuelBuddy logout interface"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"

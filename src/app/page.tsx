@@ -90,15 +90,15 @@ export default function Home() {
       {/* desktop */}
       <div className="hidden md:flex items-center justify-between"><Tools />
       <div className="text-white pl-24 h-96 -mt-20">
-        <p className="font-bold text-lg">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript. My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
+        <p className="font-bold text-lg">With a focus on building high-performance hybrid mobile and responsive full-stack applications driven by modern agentic coding and AI automation, I bring solid expertise in TypeScript, Swift, and Kotlin. My tech stack includes frameworks and libraries like React Native, React, Next.js, Node.js, Vue.js, and R3F, alongside tools such as Docker, Git, Xcode, and Cursor.</p>
       <ComputersCanvas />
       </div>
       </div>
     {/* mobile */}
       <div className="pt-20 md:hidden">
       <div className="flex flex-col items-center text-white -mt-20">
-        <p className="font-bold mx-10">With a focus on creating 3D visual experiences using the latest web technologies, I bring solid expertise in HTML , CSS , TypeScript and JavaScript.</p>
-        <p className="font-bold mx-10">My tech stack includes frameworks and libraries like React, React Native, Node.js, Vue.js, Framer Motion and R3F, alongside tools such as VS Code, Git, and Docker.</p>
+        <p className="font-bold mx-10">With a focus on building high-performance hybrid mobile and responsive full-stack applications driven by modern agentic coding and AI automation, I bring solid expertise in TypeScript, Swift, and Kotlin.</p>
+        <p className="font-bold mx-10">My tech stack includes frameworks and libraries like React Native, React, Next.js, Node.js, Vue.js, and R3F, alongside tools such as Docker, Git, Xcode, and Cursor.</p>
       <div className="w-96 -mt-10"><ComputersCanvas /></div>
       </div>
       </div>

@@ -127,7 +127,7 @@ link:"https://apps.apple.com/in/app/sidekick-ride-electric/id6745085521",
   {
     category: "Education",
     title: "Madrasa App",
-    src: "/images/madarsa/madarsa/png",
+    src: "/images/madarsa/madarsa.png",
     description: `<ul><li>A React Native app which provides comprehensive Islamic tools and spiritual resources inlcuding:</li>
 <li>99 names of allah with audio</li>
 <li>Tasbih(digital prayer beads) with duas</li>

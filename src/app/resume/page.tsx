@@ -43,79 +43,63 @@ export default function Resume() {
         email: "sahilahmed.y2k@gmail.com",
         linkedin: "https://linkedin.com/in/sahil-ahmed-",
         github: "https://github.com/idesofmarch00",
-        leetcode: "https://leetcode.com/u/NyrOsNjfL3/",
-        website: "https://sahilahmed.vercel.app/"
+        website: "https://sahilahmed.vercel.app/",
+        blog: "https://sahilahmed.hashnode.dev/"
       },
       experience: [
         {
-          title: "Sr. Frontend Engineer",
+          title: "Sr. FrontEnd Engineer",
           company: "MyFuels",
-          period: "2024 -- Present",
-          location: "Gurugram, India",
+          period: "Jan 2025 -- Present",
+          location: "NCR, India / Dubai, UAE",
           responsibilities: [
-            "Headed the development of multiple mission-critical cross-platform iOS and Android app leveraging Expo React Native, Redux, and GraphQL with a PostgreSQL backend for customers for fuel ordering within an Agile framework.",
-            "Implemented multi-language support for local Indian languages in addition to English, increasing success rates for onboarding and expanding the customer base by 55%.",
-            "Built pixel-perfect and buttery smooth UI leveraging native APIs leading to 12% increase in user retention rates.",
-            "Integrated payment gateways like Cashfree and Easebuzz, and third-party in-app integrations including Statiq ,Zoho Support and GlobalAssure for extended service offerings like include EV charging, assistance and insurance solutions."
+            "Headed the end-to-end development of multiple mission-critical cross-platform iOS and Android apps leveraging Expo React Native, Redux, with a REST/Hasura GraphQL and PostgresSQL backend within an Agile framework for the customers to order fuel.",
+            "Implemented multi-language support for local Indian languages, increasing success rates for onboarding and expanding the customer base by 55%.",
+            "Built pixel-perfect, high-performance UI leveraging native APIs and integrated multiple payment gateways (Cashfree, Easebuzz) alongside third-party service offerings (Statiq EV charging, GlobalAssure insurance, Zoho Support), driving a 35% increase in ancillary product adoption and a 18% uplift in average order value through seamless in-app cross-sell flows."
           ]
         },
         {
           title: "Software Engineer",
           company: "FuelBuddy",
           period: "2023 -- 2024",
-          location: "Gurugram, India",
+          location: "NCR, India / Dubai, UAE",
           responsibilities: [
-            "Developed scalable and high-performance responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimized workflow and resulted in a 27% boost in delivery efficiency.",
+            "Developed scalable and high-performance and responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, Electron.js and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimised workflow and resulted in a 27% reduction in support tickets and manual interventions.",
             "Integrated Mapbox for tracking location and vehicle fuel metrics on our dashboard. This streamlined delivery routes, reducing average delivery times by 50 minutes per order.",
-            "Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE and all over India using WebSockets, which increased dispensing accuracy by 32%.",
-            "Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month.",
-            "While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation."
-          ]
-        },
-        {
-          title: "Software Engineer",
-          company: "FuelBuddy",
-          period: "Aug 2022 -- 2023",
-          location: "Gurugram, India",
-          responsibilities: [
-            "Developed mission-critical, scalable, high-performance and responsive Progressive Web Apps (PWA) leveraging React, React Native, Redux, Vue, and GraphQL for the delivery and operations teams within an Agile framework, optimizing workflow and resulting in a 27% boost in delivery efficiency.",
-            "Integrated Mapbox and UI libraries for designing intuitive location tracking and order visualization views while adhering to established UI/UX design principles, streamlining delivery routes and reducing average delivery times by 50 minutes per order.",
-            "Implemented multi-language support for local Indian languages in addition to English, expanding the driver base by 40% and increasing success rates for onboarding.",
-            "Integrated real-time notification functionality and authentication using Firebase, ensuring drivers were always informed of critical updates and order changes.",
-            "Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams, resulting in a 32% increase in dispensing accuracy."
+            "Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE using WebSockets, which increased dispensing accuracy by 32%.",
+            "Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month. While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation."
           ]
         }
       ],
       projects: [
         {
-          name: "SnipChat",
-          description: "Developed a responsive Progressive Web App (PWA) utilizing Backend-as-a-Service (BaaS) to deliver a seamless chat experience with features like sending snaps, images, and location. Implemented real-time notifications and service workers to enhance engagement and ensure offline functionality, addressing connectivity challenges.",
-          technologies: ["Quasar", "Vue.js", "Firebase", "Mapbox GL JS", "WorkBox", "Vite"],
-          url: "https://musical-narwhal-4203b8.netlify.app/"
+          name: "Madrasa - Mobile Islamic Lifestyle App",
+          description: "Orchestrated custom native platform bridges utilizing iOS WidgetKit/ActivityKit (Dynamic Island) and Android AppWidgets to share offline-first state, keeping background sync delta payloads under 12KB per sync and maintaining a p95 local data write latency under 5ms. Engineered a persistent background audio system and a gamified personalization shop utilizing RevenueCat and Google AdMob, boosting average user session duration by 45 seconds while achieving a 99.9% crash-free user rate.",
+          technologies: ["TypeScript", "React Native", "Zustand", "Firebase", "Swift", "Kotlin"],
+          url: "https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view"
         },
         {
-          name: "SwissArmyKnife NewTab",
-          description: "Built a Chrome extension that replaces the new tab page with a custom interface with real-time Bitcoin price, weather updates, and other productivity tools utilizing many APIs including CoinGecko and OpenWeatherMap, for dynamic content like a random quote time the user opens a new tab.",
-          technologies: ["Javascript", "HTML/CSS"],
-          url: "https://github.com/idesofmarch00/SwissArmyKnife-Dashboard"
+          name: "SideKick",
+          description: "Developed an offline-first micromobility app for large campuses (securing 100+ active downloads) which integrated Kalman filtering and Douglas-Peucker algorithms for high-precision GPS trajectory smoothing, compressing 600 raw coordinates to under 200 points per ride session while extending active tracking battery life by 15–20 minutes, alongside a custom canvas engine for Strava-style photo watermarking.",
+          technologies: ["TypeScript", "Expo", "Zustand", "Firebase"],
+          url: "https://play.google.com/store/apps/details?id=in.sidekick"
         }
       ],
       skills: {
-        languages: ["JavaScript", "TypeScript", "HTML/CSS", "Python", "SQL (Postgres)", "NoSQL", "GraphQL"],
-        frameworks: ["React", "React Native", "Next.js", "Redux", "Zustand", "React Three Fiber (R3F)", "Framer Motion", "Vue.js", "TailwindCSS", "Material UI", "Quasar", "Electron", "Node.js", "MongoDB", "Express", "Firebase", "Jest", "Playwright", "TanStack"],
-        tools: ["Git", "Docker", "Vite", "webpack", "GCP", "REST", "Cursor", "WordPress", "ESLint", "npm", "Figma", "LLMs"]
+        frameworks: ["Next.js", "Vue.js", "Node.js", "MongoDB", "Express", "Jest", "Playwright", "TanStack", "Prisma", "Redis", "React", "React Native", "Zustand", "Redux", "Expo", "Framer", "TailwindCSS", "Material UI", "Quasar", "Electron", "Firebase"],
+        tools: ["Git", "Docker", "Vite", "AWS", "GCP", "Cursor", "WordPress", "ESLint", "npm", "XCode", "Claude", "Jira", "Slack", "Figma", "REST"],
+        other: ["Prompt Engineering", "Agentic Coding", "System Design", "LLD", "HLD", "Full Stack", "CI/CD", "TDD", "FDE", "Figma"]
       },
       education: {
         degree: "Bachelor of Technology in Computer Science Engineering",
-        institution: "Jamia Hamdard University",
+        institution: "Jamia Hamdard University (CGPA: 8.6)",
         location: "Delhi, India",
-        period: "Aug. 2019 -- April 2023"
+        period: "Aug 2019 -- Apr 2023"
       },
       awards: [
         {
-          title: "Performer of the Month",
-          date: "September 2023",
-          description: "Awarded for delivering critical business features within tight deadlines"
+          title: "Performer of the Month (Sep '23)",
+          description: "Awarded for delivering critical business features within tight deadlines."
         }
       ]
     };
@@ -128,66 +112,69 @@ export default function Resume() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil Ahmed - Resume</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .section { margin-bottom: 25px; }
-        .section-title { font-size: 18px; font-weight: bold; border-bottom: 2px solid #333; padding-bottom: 5px; margin-bottom: 15px; }
-        .job-title { font-weight: bold; font-size: 16px; }
-        .company-info { font-style: italic; color: #666; margin-bottom: 10px; }
-        .skills-category { font-weight: bold; margin-top: 10px; }
-        ul { margin: 10px 0; padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        a { color: #0066cc; text-decoration: none; }
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; color: #333; }
+        .header { text-align: center; margin-bottom: 25px; }
+        .header h1 { margin: 0; font-size: 28px; color: #1a365d; }
+        .header h2 { margin: 5px 0 15px 0; font-size: 20px; color: #4a5568; font-weight: normal; }
+        .contact-info { font-size: 14px; margin-bottom: 20px; }
+        .section { margin-bottom: 20px; }
+        .section-title { font-size: 16px; font-weight: bold; border-bottom: 2px solid #1a365d; padding-bottom: 3px; margin-bottom: 12px; color: #1a365d; text-transform: uppercase; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 14px; margin-bottom: 2px; }
+        .item-sub { display: flex; justify-content: space-between; font-style: italic; font-size: 13px; color: #4a5568; margin-bottom: 6px; }
+        .skills-category { font-weight: bold; font-size: 13px; margin-top: 6px; }
+        ul { margin: 5px 0 10px 0; padding-left: 15px; }
+        li { margin-bottom: 4px; font-size: 13px; }
+        a { color: #1a365d; text-decoration: none; }
         a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Sahil Ahmed</h1>
-        <p>Phone: +91 9871138380 | Email: sahilahmed.y2k@gmail.com</p>
-        <p>
-            <a href="https://linkedin.com/in/sahil-ahmed-">LinkedIn</a> | 
-            <a href="https://github.com/idesofmarch00">GitHub</a> | 
-            <a href="https://leetcode.com/u/NyrOsNjfL3/">LeetCode</a> | 
-            <a href="https://sahilahmed.vercel.app/">Website</a>
-        </p>
+        <h2>Senior Front-End Engineer</h2>
+        <div class="contact-info">
+            +91 9871138380 | <a href="mailto:sahilahmed.y2k@gmail.com">sahilahmed.y2k@gmail.com</a> | <a href="https://sahilahmed.vercel.app/">Website</a> | <a href="https://www.linkedin.com/in/sahil-ahmed-/">LinkedIn</a> | <a href="https://github.com/idesofmarch00">GitHub</a> | <a href="https://sahilahmed.hashnode.dev/">Blog</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <p style="margin: 0; font-size: 13px;">High-impact Senior Front-End Engineer specializing in high-performance hybrid mobile and responsive web applications driven by modern agentic engineering workflows. Proven track record of optimizing low-latency IoT systems.</p>
     </div>
 
     <div class="section">
         <div class="section-title">Experience</div>
         
-        <div style="margin-bottom: 20px;">
-            <div class="job-title">Sr. Frontend Engineer</div>
-            <div class="company-info">MyFuels | 2024 -- Present | Gurugram, India</div>
+        <div style="margin-bottom: 15px;">
+            <div class="item-header">
+                <span>Sr. FrontEnd Engineer</span>
+                <span>Jan 2025 -- Present</span>
+            </div>
+            <div class="item-sub">
+                <span>MyFuels</span>
+                <span>NCR, India / Dubai, UAE</span>
+            </div>
             <ul>
-                <li>Headed the development of multiple mission-critical cross-platform iOS and Android app leveraging Expo React Native, Redux, and GraphQL with a PostgreSQL backend for customers for fuel ordering within an Agile framework.</li>
-                <li>Implemented multi-language support for local Indian languages in addition to English, increasing success rates for onboarding and expanding the customer base by 55%.</li>
-                <li>Built pixel-perfect and buttery smooth UI leveraging native APIs leading to 12% increase in user retention rates.</li>
-                <li>Integrated payment gateways like Cashfree and Easebuzz, and third-party in-app integrations including Statiq and GlobalAssure for extended service offerings to include EV charging, assistance and other insurance solutions.</li>
+                <li>Headed the end-to-end development of multiple mission-critical cross-platform iOS and Android apps leveraging Expo React Native, Redux, with a REST/Hasura GraphQL and PostgresSQL backend within an Agile framework for the customers to order fuel.</li>
+                <li>Implemented multi-language support for local Indian languages, increasing success rates for onboarding and expanding the customer base by 55%.</li>
+                <li>Built pixel-perfect, high-performance UI leveraging native APIs and integrated multiple payment gateways (Cashfree, Easebuzz) alongside third-party service offerings (Statiq EV charging, GlobalAssure insurance, Zoho Support), driving a 35% increase in ancillary product adoption and a 18% uplift in average order value through seamless in-app cross-sell flows.</li>
             </ul>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <div class="job-title">Software Engineer</div>
-            <div class="company-info">FuelBuddy | 2023 -- 2024 | Gurugram, India</div>
+        <div style="margin-bottom: 15px;">
+            <div class="item-header">
+                <span>Software Engineer</span>
+                <span>2023 -- 2024</span>
+            </div>
+            <div class="item-sub">
+                <span>FuelBuddy</span>
+                <span>NCR, India / Dubai, UAE</span>
+            </div>
             <ul>
-                <li>Developed scalable and high-performance responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimized workflow and resulted in a 27% boost in delivery efficiency.</li>
+                <li>Developed scalable and high-performance and responsive Progressive Web Apps (PWA) and cross-platform apps leveraging React, React Native, Redux, Vue, Electron.js and GraphQL for the delivery, clients and operations teams creating a comprehensive fuel management ecosystem. This optimised workflow and resulted in a 27% reduction in support tickets and manual interventions.</li>
                 <li>Integrated Mapbox for tracking location and vehicle fuel metrics on our dashboard. This streamlined delivery routes, reducing average delivery times by 50 minutes per order.</li>
-                <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE and all over India using WebSockets, which increased dispensing accuracy by 32%.</li>
-                <li>Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month.</li>
-                <li>While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation.</li>
-            </ul>
-        </div>
-
-        <div style="margin-bottom: 20px;">
-            <div class="job-title">Software Engineer</div>
-            <div class="company-info">FuelBuddy | Aug 2022 -- 2023 | Gurugram, India</div>
-            <ul>
-                <li>Developed mission-critical, scalable, high-performance and responsive Progressive Web Apps (PWA) leveraging React, React Native, Redux, Vue, and GraphQL for the delivery and operations teams within an Agile framework, optimizing workflow and resulting in a 27% boost in delivery efficiency.</li>
-                <li>Integrated Mapbox and UI libraries for designing intuitive location tracking and order visualization views while adhering to established UI/UX design principles, streamlining delivery routes and reducing average delivery times by 50 minutes per order.</li>
-                <li>Implemented multi-language support for local Indian languages in addition to English, expanding the driver base by 40% and increasing success rates for onboarding.</li>
-                <li>Integrated real-time notification functionality and authentication using Firebase, ensuring drivers were always informed of critical updates and order changes.</li>
-                <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams, resulting in a 32% increase in dispensing accuracy.</li>
+                <li>Spearheaded the front-end development of an automated fuel dispensing system in remote partnership with the IoT and operations teams based in UAE using WebSockets, which increased dispensing accuracy by 32%.</li>
+                <li>Engineered real-time dispenser stats fetching, e-lock control mechanisms, and RFID-based vehicle identification for precise asset fueling leading to the prevention of manual errors and reducing fuel pilferage by an estimated 5,900 liters per month. While working on-site in Dubai, UAE, developed a polymorphic codebase to abstract integrations with diverse dispenser models (Tokheim, Isoil, Veeder) to accelerate feature implementation.</li>
             </ul>
         </div>
     </div>
@@ -195,45 +182,59 @@ export default function Resume() {
     <div class="section">
         <div class="section-title">Projects</div>
         
-        <div style="margin-bottom: 15px;">
-            <div class="job-title">SnipChat</div>
-            <p>Developed a responsive Progressive Web App (PWA) utilizing Backend-as-a-Service (BaaS) to deliver a seamless chat experience with features like sending snaps, images, and location. Implemented real-time notifications and service workers to enhance engagement and ensure offline functionality, addressing connectivity challenges.</p>
-            <p><strong>Technologies:</strong> Quasar, Vue.js, Firebase, Mapbox GL JS, WorkBox, Vite</p>
-            <p><strong>URL:</strong> <a href="https://musical-narwhal-4203b8.netlify.app/">https://musical-narwhal-4203b8.netlify.app/</a></p>
+        <div style="margin-bottom: 12px;">
+            <div class="item-header">
+                <span>Madrasa - Mobile Islamic Lifestyle App</span>
+                <span><a href="https://drive.google.com/file/d/19IMRwpcrw0L-WNWhuWIaOg2JHUAX1M09/view">Demo Link</a></span>
+            </div>
+            <div style="font-size: 12px; color: #4a5568; margin-bottom: 4px;">TypeScript, React Native, Zustand, Firebase, Swift, Kotlin</div>
+            <ul>
+                <li>Orchestrated custom native platform bridges utilizing iOS WidgetKit/ActivityKit (Dynamic Island) and Android AppWidgets to share offline-first state, keeping background sync delta payloads under 12KB per sync and maintaining a p95 local data write latency under 5ms.</li>
+                <li>Engineered a persistent background audio system and a gamified personalization shop utilizing RevenueCat and Google AdMob, boosting average user session duration by 45 seconds while achieving a 99.9% crash-free user rate.</li>
+            </ul>
         </div>
         
-        <div style="margin-bottom: 15px;">
-            <div class="job-title">SwissArmyKnife NewTab</div>
-            <p>Built a Chrome extension that replaces the new tab page with a custom interface with real-time Bitcoin price, weather updates, and other productivity tools utilizing many APIs including CoinGecko and OpenWeatherMap, for dynamic content like a random quote time the user opens a new tab.</p>
-            <p><strong>Technologies:</strong> Javascript, HTML/CSS</p>
-            <p><strong>URL:</strong> <a href="https://github.com/idesofmarch00/SwissArmyKnife-Dashboard">https://github.com/idesofmarch00/SwissArmyKnife-Dashboard</a></p>
+        <div style="margin-bottom: 12px;">
+            <div class="item-header">
+                <span>SideKick</span>
+                <span><a href="https://play.google.com/store/apps/details?id=in.sidekick">Google Play Link</a></span>
+            </div>
+            <div style="font-size: 12px; color: #4a5568; margin-bottom: 4px;">TypeScript, Expo, Zustand, Firebase</div>
+            <ul>
+                <li>Developed an offline-first micromobility app for large campuses (securing 100+ active downloads) which integrated Kalman filtering and Douglas-Peucker algorithms for high-precision GPS trajectory smoothing, compressing 600 raw coordinates to under 200 points per ride session while extending active tracking battery life by 15--20 minutes, alongside a custom canvas engine for Strava-style photo watermarking.</li>
+            </ul>
         </div>
     </div>
 
     <div class="section">
         <div class="section-title">Technical Skills</div>
-        
-        <div class="skills-category">Languages:</div>
-        <p>JavaScript, TypeScript, HTML/CSS, Python, SQL (Postgres), NoSQL, GraphQL</p>
-        
-        <div class="skills-category">Frameworks & Libraries:</div>
-        <p>React, React Native, Next.js, Redux, Zustand, React Three Fiber (R3F), Framer Motion, Vue.js, TailwindCSS, Material UI, Quasar, Electron, Node.js, MongoDB, Express, Firebase, Jest, Playwright, TanStack</p>
-        
-        <div class="skills-category">Tools & Technologies:</div>
-        <p>Git, Docker, Vite, webpack, GCP, REST, Cursor, WordPress, ESLint, npm, Figma, LLMs</p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
-        <div class="job-title">Bachelor of Technology in Computer Science Engineering</div>
-        <div class="company-info">Jamia Hamdard University | Delhi, India | Aug. 2019 -- April 2023</div>
+        <div style="font-size: 13px; line-height: 1.5;">
+            <div><span class="skills-category">Frameworks & Libraries:</span> Next.js, Vue.js, Node.js, MongoDB, Express, Jest, Playwright, TanStack, Prisma, Redis, React, React Native, Zustand, Redux, Expo, Framer, TailwindCSS, Material UI, Quasar, Electron, Firebase</div>
+            <div><span class="skills-category">Tools & Technologies:</span> Git, Docker, Vite, AWS, GCP, Cursor, WordPress, ESLint, npm, XCode, Claude, Jira, Slack, Figma, REST</div>
+            <div><span class="skills-category">Other Skills:</span> Prompt Engineering, Agentic Coding, System Design, LLD, HLD, Full Stack, CI/CD, TDD, FDE, Figma</div>
+        </div>
     </div>
 
     <div class="section">
         <div class="section-title">Awards</div>
-        <div class="job-title">Performer of the Month</div>
-        <div class="company-info">September 2023</div>
-        <p>Awarded for delivering critical business features within tight deadlines</p>
+        <ul>
+            <li><strong>Performer of the Month (Sep '23):</strong> Awarded for delivering critical business features within tight deadlines.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="item-header">
+            <span>Bachelor of Technology in Computer Science Engineering</span>
+            <span>Aug 2019 -- Apr 2023</span>
+        </div>
+        <div class="item-sub">
+            <span>Jamia Hamdard University (CGPA: 8.6)</span>
+            <span>Delhi, India</span>
+        </div>
+        <ul>
+            <li>Developed foundational and advanced programming logic alongside practical engineering skills through intensive coursework in Data Structures & Algorithms (DSA), Object-Oriented Programming (OOPs), Operating Systems, Database Management Systems (DBMS), Computer Networks, Artificial Intelligence and Machine Learning (AI/ML).</li>
+        </ul>
     </div>
 </body>
 </html>`;
