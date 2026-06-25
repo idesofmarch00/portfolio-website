@@ -24,7 +24,7 @@ export default function Intro() {
         <Highlight className="text-white">
           3+ years of experience
         </Highlight> and a knack for building <Highlight className="text-white">scalable,
-          high-performance user-centric full-stack web and mobile applications leveraging Swift, Kotlin, and modern agentic coding & AI automation workflows.</Highlight>
+          high-performance user-centric and scalable full-stack web , mobile and hybrid applications leveraging modern agentic coding & AI automation workflows.</Highlight>
         I take pride in writing <Highlight className="text-white">clean, high-quality code</Highlight> that solves real-world problems.
         <br />
         On days when my eyes and fingers need a break from the screens and keyboard , you&apos;ll find me immersed in <Highlight className="text-white">literature,
