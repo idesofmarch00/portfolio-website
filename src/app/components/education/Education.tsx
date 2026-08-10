@@ -17,7 +17,7 @@ export default function Education() {
           <div>
             <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
               Sr. Frontend Engineer at {" "}
-              <LinkPreview url="https://play.google.com/store/apps/details?id=in.myfuels.customerapp&pcampaignid=web_share" className="font-bold">
+              <LinkPreview url="https://play.google.com/store/apps/details?id=com.fuels.customer&hl=en_IN" className="font-bold">
                 <strong><u>MyFuels</u></strong>
               </LinkPreview>
               <br /> NCR, India / Dubai, UAE
@@ -69,7 +69,7 @@ export default function Education() {
           <div>
             <p className="text-neutral-200 text-xs md:text-xl font-bold mb-8">
               Software Engineer at {" "}
-              <LinkPreview url="https://play.google.com/store/apps/developer?id=Treis+Solutions+LLP&hl=en_IN" className="font-bold">
+              <LinkPreview url="https://play.google.com/store/search?q=fuelbuddy&c=apps&hl=en_IN" className="font-bold">
                 <strong><u>FuelBuddy</u></strong>
               </LinkPreview>
               <br /> NCR, India / Dubai, UAE
@@ -137,29 +137,29 @@ export default function Education() {
       content: (
         <div>
           <p className="text-neutral-200 md:text-xl font-bold pb-4">
-            I hold a Bachelor of Technology (B.Tech) degree in Computer Science Engineering from  
-            <span className="font-medium"> Jamia Hamdard University, Delhi, India</span>. 
+            I hold a Bachelor of Technology (B.Tech) degree in Computer Science Engineering from
+            <span className="font-medium"> Jamia Hamdard University, Delhi, India</span>.
           </p>
           <p className="text-neutral-200 md:text-sm font-normal pb-2">My coursework included an in-depth study of various key subjects essential for a strong foundation in computer science:</p>
           <ul className="list-disc pl-5 text-neutral-200 text-xs md:text-sm font-normal mb-8">
             <li>
-              <strong>Data Structures and Algorithms:</strong> 
+              <strong>Data Structures and Algorithms:</strong>
               Focused on the design, implementation, and analysis of efficient data structures and algorithms, providing a solid grounding in solving complex computational problems.
             </li>
             <li>
-              <strong>Object-Oriented Programming (OOP):</strong> 
+              <strong>Object-Oriented Programming (OOP):</strong>
               Explored the principles of OOP, including encapsulation, inheritance, and polymorphism, with a strong emphasis on coding best practices and software design patterns.
             </li>
             <li>
-              <strong>Database Management Systems (DBMS):</strong> 
+              <strong>Database Management Systems (DBMS):</strong>
               Covered the concepts of database design, normalization, SQL, and the management of large-scale databases, ensuring a strong understanding of data storage and retrieval mechanisms.
             </li>
             <li>
-              <strong>Computer Networks:</strong> 
+              <strong>Computer Networks:</strong>
               Studied the architecture, protocols, and functioning of computer networks, including topics such as TCP/IP, network security, and wireless communication.
             </li>
             <li>
-              <strong>Operating Systems:</strong> 
+              <strong>Operating Systems:</strong>
               Focused on the design and functioning of operating systems, including process management, memory management, file systems, and system security.
             </li>
           </ul>
@@ -202,7 +202,7 @@ export default function Education() {
   return (
     <div className="w-96 md:w-full">
       <Timeline data={data}>
-        <TextReveal visible="My Work Experience" revealed="My Education"/>
+        <TextReveal visible="My Work Experience" revealed="My Education" />
       </Timeline>
     </div>
   );
